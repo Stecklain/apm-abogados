@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  h2,
+  h3 {
+    font-family: 'Viga';
+  }
+
+  h1 {
+    @apply text-4xl;
+  }
+  h2 {
+    @apply text-3xl;
+  }
+  h3 {
+    @apply text-2xl;
+  }
+
+  p,
+  li {
+    font-family: 'Roboto';
+  }
+}
+
+@layer utilities {
+  .clip-path-incline {
+    clip-path: polygon(100px 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .slant-bg-secondary::before {
+    content: '';
+    background-color: #014f8d;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 15vw;
+    float: left;
+    clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
+
+     @media (max-width: 768px) { 
+      clip-path: polygon(0 0, 100% 0, 50% 50%, 0% 100%);
+    } 
+  }
+}

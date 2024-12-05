@@ -1,0 +1,6 @@
+echo 'Checking dependencies for vulnerabilities'
+npm audit --omit=dev 
+
+
+echo "TODO: Add && npm run test to verify command"
+npm run verify

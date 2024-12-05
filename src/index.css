@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #303131;
+  background-color: #f7f7f7;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Viga', 'Roboto', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+}
+
+.slick-prev {
+  left: 30% !important;
+  z-index: 1 !important;
+}
+
+.slick-next {
+  right: 30% !important;
+  z-index: 1 !important;
+}
+
+@media (max-width: 768px) {
+  .slick-prev {
+    left: 2% !important;
+  }
+
+  .slick-next {
+    right: 2% !important;
+  }
+}*/
