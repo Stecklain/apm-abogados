@@ -9,6 +9,8 @@ export default {
         secondary: '#014F8D',
         base: '#F7F7F7',
         baseDark: '#303131',
+         customBlue: '#23314B',
+         customGrey: '#3F4A5D',
       },
       fontFamily: {
         serif: ['serif'],
