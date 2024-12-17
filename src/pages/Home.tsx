@@ -322,7 +322,7 @@ const Home: React.FC = () => {
                   className="p-1 bg-transparent text-white border-b border-gray-400 focus:outline-none focus:border-white transition duration-300"
                 />
                 <h4>Mensaje</h4>
-                <textarea rows="4" className="p-3  text-white bg-customBlue border focus:outline-none "></textarea>
+                <textarea  className="p-3  text-white bg-customBlue border focus:outline-none "></textarea>
                 <button
                   type="submit"
                   className="w-fit bg-white text-customBlue px-20 py-4  shadow hover:bg-gray-300 transition">
