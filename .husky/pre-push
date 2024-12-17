@@ -3,4 +3,4 @@ npm audit --omit=dev
 
 
 echo "TODO: Add && npm run test to verify command"
-npm run verify
+npm run verifynpm run lint && npm run test
