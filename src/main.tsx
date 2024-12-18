@@ -14,6 +14,7 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import 'dayjs/locale/es';
 import Header from '../src/pages/Header.tsx';
 import AreasDePractica from '../src/pages/AreasDePractica.tsx';
+import Footer from './pages/Footer.tsx';
 
 const rootElement = document.getElementById('root')!;
 const root = createRoot(rootElement);
@@ -28,7 +29,9 @@ root.render(
             <SnackbarProvider>
               <Header />
               <AreasDePractica />
+              
               <RouterProvider router={router} />
+              <Footer/>
             </SnackbarProvider>
           </QueryClientProvider>
         </LocalizationProvider>
