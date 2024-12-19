@@ -18,7 +18,7 @@ const AreasDePractica: React.FC = () => {
           </p>
         </div>
 
-       
+
         {/* Columna de Imagen */}
         <div className="flex justify-center">
           <img
@@ -30,8 +30,24 @@ const AreasDePractica: React.FC = () => {
       </div>
     </section>
 
-  |  {/* Cards */}
-    <CardsGrid/>
+    |  {/* Cards */}
+    <CardsGrid />
+
+    {/* Desafio legal */}
+
+    <section className="bg-gray-400 py-12">
+      <div className="desafiolegal-areasdepractica-contain mx-auto  text-end flex flex-col items-end">
+        <h2 className="title-desafiolegal-areasdepractica  font-bold text-white mb-4">¿Tienes un desafío legal?</h2>
+        <p className="p-desafiolegal-areasdepractica text-customBlue mb-6 leading-relaxed max-w-4xl">
+          Nuestro equipo de abogados está listo para ofrecerte el asesoramiento y la representación que necesitas.
+          Contáctanos hoy y descubre cómo podemos ayudarte a alcanzar los mejores resultados.
+        </p>
+        <button className="bg-customBlue text-white font-semibold py-3 px-8 border border-customBlue shadow-md hover:bg-white hover:text-customBlue transition duration-300">
+          Hacer una consulta
+        </button>
+      </div>
+    </section>
+
 
   </>;
 };
