@@ -92,7 +92,7 @@ const Home: React.FC = () => {
         </a>
       </div>
 
-      <div className="flex flex-col items-center bg-white py-16  relative w-full">
+      <div className="flex flex-col items-center bg-white pt-16  relative w-full">
         {/* Sección superior con imagen y texto */}
         <div className="container-img-section2 flex flex-col md:flex-row items-center md:items-end gap-8 w-full ">
           {/* Imagen */}
@@ -322,7 +322,7 @@ const Home: React.FC = () => {
                   className="p-1 bg-transparent text-white border-b border-gray-400 focus:outline-none focus:border-white transition duration-300"
                 />
                 <h4>Mensaje</h4>
-                <textarea  className="p-3  text-white bg-customBlue border focus:outline-none "></textarea>
+                <textarea className="p-3  text-white bg-customBlue border focus:outline-none "></textarea>
                 <button
                   type="submit"
                   className="w-fit bg-white text-customBlue px-20 py-4  shadow hover:bg-gray-300 transition">
@@ -340,12 +340,6 @@ const Home: React.FC = () => {
             </div>
           </div>
 
-          {/* Footer */}
-          <div className="mt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-300 border-t border-gray-600 pt-6">
-            <p>General Juan D Perón 315, 7° piso - CABA</p>
-            <p>Tel: 11-5964-2149</p>
-            <p>info@apmabogados.com.ar</p>
-          </div>
         </div>
       </div>
     </div>

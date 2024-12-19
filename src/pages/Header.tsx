@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   return (
@@ -9,16 +10,24 @@ const Header: React.FC = () => {
 
         <nav className="flex space-x-14">
           <a href="#" className="hover:text-gray-300 transition">
+          <Link to="/">
             Inicio
+            </Link>
           </a>
           <a href="#" className="hover:text-gray-300 transition">
+          <Link to="/areas-de-practica">
             Áreas de práctica
+            </Link>
           </a>
           <a href="#" className="hover:text-gray-300 transition">
+          <Link to="/el-estudio">
             El estudio
+            </Link>
           </a>
           <a href="#" className="hover:text-gray-300 transition">
+          <Link to="/nuestro-equipo">
             Nuestro equipo
+            </Link>
           </a>
         </nav>
 
@@ -27,7 +36,9 @@ const Header: React.FC = () => {
           <a
             href="#"
             className=" custom-button-small   text-white hover:bg-white  hover:text-customBlue transition-all border border-white ">
+             <Link to="/contacto">
             Contacto
+            </Link>
           </a>
         </div>
       </div>

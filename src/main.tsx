@@ -12,9 +12,6 @@ import './styles/tailwind.css';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import 'dayjs/locale/es';
-import Header from '../src/pages/Header.tsx';
-import AreasDePractica from '../src/pages/AreasDePractica.tsx';
-import Footer from './pages/Footer.tsx';
 
 const rootElement = document.getElementById('root')!;
 const root = createRoot(rootElement);
@@ -27,11 +24,8 @@ root.render(
         <LocalizationProvider dateAdapter={AdapterDayjs} adapterLocale="es">
           <QueryClientProvider client={queryClient}>
             <SnackbarProvider>
-              <Header />
-              <AreasDePractica />
-              
+              {/* AQUI RouterProvider envuelve todo */}
               <RouterProvider router={router} />
-              <Footer/>
             </SnackbarProvider>
           </QueryClientProvider>
         </LocalizationProvider>

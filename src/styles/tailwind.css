@@ -161,3 +161,34 @@ width: 981px;
 .title-practice{
   font-size: 50px;
 }
+
+.areasdepractica-banner{
+  background-color: #D9D9D980;
+  height: 550px;
+}
+
+.img-banner-areasdepractica{
+  width:1025px;
+  height: 550px;
+}
+
+.contain-info-areasdepractica{
+  width: 619px;
+
+}
+.title-areasdepractica-banner{
+  font-size: 50px;
+  color: #23314B
+}
+
+.p-banner-areasdepractica{
+  font-size: 22px;
+  line-height: 30px;
+}
+.p-cards-areasdepractica{
+  font-size: 18px;
+  height: 216px;
+}
+.title-cards-areasdepractica{
+  font-size: 30px;
+}
