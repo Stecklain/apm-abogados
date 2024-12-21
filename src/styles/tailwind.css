@@ -24,6 +24,9 @@
     font-family: 'Roboto';
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 
 @layer utilities {
   .clip-path-incline {
@@ -215,4 +218,16 @@ width: 981px;
 
 .elestudio-maps-contain{
   width: 1560px;
+}
+
+.group-member-info{
+
+}
+.name-member{
+  font-size: 40px;
+}
+
+.job-member{
+  font-size: 30px;
+  margin-top: 10px;
 }

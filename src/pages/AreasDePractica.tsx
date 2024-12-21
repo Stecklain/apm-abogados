@@ -1,5 +1,6 @@
 import React from 'react';
 import CardsGrid from '../hooks/CardsGrid';
+import { Link } from "react-router-dom";
 
 const AreasDePractica: React.FC = () => {
   return <>
@@ -42,9 +43,10 @@ const AreasDePractica: React.FC = () => {
           Nuestro equipo de abogados está listo para ofrecerte el asesoramiento y la representación que necesitas.
           Contáctanos hoy y descubre cómo podemos ayudarte a alcanzar los mejores resultados.
         </p>
-        <button className="bg-customBlue text-white font-semibold py-3 px-8 border border-customBlue shadow-md hover:bg-white hover:text-customBlue transition duration-300">
+        <Link
+          to="/contacto" className="bg-customBlue text-white font-semibold py-3 px-8 border border-customBlue shadow-md hover:bg-white hover:text-customBlue transition duration-300">
           Hacer una consulta
-        </button>
+        </Link>
       </div>
     </section>
 

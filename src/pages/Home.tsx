@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { Link } from "react-router-dom";
 
 const Home: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -86,7 +87,7 @@ const Home: React.FC = () => {
 
         {/* Boton consulta*/}
         <a
-          href="#"
+          href="#contact-form"
           className="custom-button-home text-center flex items-center justify-center text-white hover:text-customBlue hover:bg-white text-lg font-medium shadow-md transition relative z-20">
           Hacer una consulta
         </a>
@@ -113,11 +114,11 @@ const Home: React.FC = () => {
               incluyendo Acciones de Clase, tipo de proceso este último que hemos sustanciado en numerosas ocasiones
               ante la <strong className="text-gray-800">Justicia Nacional</strong>, especialmente.
             </p>
-            <a
-              href="#"
+            <Link
+              to="/contacto"
               className="px-10 py-3 bg-customBlue text-white  shadow hover:text-customBlue  hover:bg-white transition">
               Escribinos
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -244,11 +245,11 @@ const Home: React.FC = () => {
 
           {/* Botón */}
           <div className="text-center mt-12">
-            <a
-              href="#"
+            <Link
+              to="/areas-de-practica"
               className="px-8 py-4  bg-white text-customBlue hover:text-white font-medium shadow border border-customBlue hover:bg-customBlue transition">
               Ver todas las áreas
-            </a>
+            </Link>
           </div>
         </div>
         {/* Miembros del estudio */}
@@ -297,7 +298,7 @@ const Home: React.FC = () => {
           </div>
         </section>
         {/* Contacto */}
-        <div className="bg-customBlue text-white w-full py-12 px-40 ">
+        <div id="contact-form" className="bg-customBlue text-white w-full py-12 px-40 ">
           <h1 className="flex items-center justify-center mb-14 text-5xl">Contacto</h1>
           <div className=" grid grid-cols-2 md:grid-cols-2 gap-8">
             {/* Columna izquierda: Formulario */}

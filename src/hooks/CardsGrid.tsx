@@ -1,3 +1,6 @@
+
+import { Link } from "react-router-dom";
+
 // Info
 const cardsData = [
   {
@@ -100,9 +103,11 @@ const CardsGrid = () => {
 
               {/* Boton hover */}
               <div className="opacity-0 group-hover:opacity-100 my-6 transition-opacity duration-300">
-                <button className="text-white border  border-white hover:bg-white hover:text-customBlue px-4 py-2 shadow">
+
+                <Link
+                  to="/contacto" className="text-white border  border-white hover:bg-white hover:text-customBlue px-4 py-2 shadow">
                   Quiero asesorarme
-                </button>
+                </Link>
               </div>
             </div>
           </div>
