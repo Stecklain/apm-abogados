@@ -7,9 +7,9 @@ const Footer: React.FC = () => {
         {/* Columna Izquierda: Logo */}
         <div className="mb-4 md:mb-0">
           <img
-            src="/assets/img/logo.png" // Ajusta la ruta según tu proyecto
+            src="/assets/img/APM-abogados-logo.svg" // Ajusta la ruta según tu proyecto
             alt="APM Abogados"
-            className="w-32 h-auto"
+            className="w-full h-full object-contain"
           />
         </div>
 

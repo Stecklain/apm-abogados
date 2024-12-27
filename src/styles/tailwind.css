@@ -58,7 +58,7 @@ html {
 }
 
 .custom-button-small {
-  @apply text-white text-center flex items-center justify-center hover:bg-white transition-all border border-black rounded;
+  @apply text-white text-center flex items-center justify-center hover:bg-white transition-all border border-black ;
   width: 164px;
   height: 45px;
 }
