@@ -49,18 +49,24 @@ html {
   }
 }
 
+.text-customBlue {
+  @apply text-blue-500;
+}
 
-
+.hover\:text-customBlue:hover {
+  @apply text-blue-600;
+}
 
 .custom-button-small {
-  @apply text-white text-center flex items-center justify-center hover:bg-white transition-all border border-black ;
-  
+  @apply text-white text-center flex items-center justify-center hover:bg-white transition-all border border-black rounded;
   width: 164px;
   height: 45px;
 }
-.header-background{
-  background-color: #23314B;
+
+.header-background {
+  @apply bg-[#23314B] flex items-center; /* Combina bg-customBlue con tu color actual */
   height: 100px;
+  padding: 16px; /* O usa @apply py-4 */
 }
 
 .banner-home{

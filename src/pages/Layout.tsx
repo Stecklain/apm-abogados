@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
-import Header from '../pages/Header';
-import Footer from '../pages/Footer';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import ScrollToTop from '../hooks/ScrollToTop';
 
 export default function Layout() {
@@ -8,8 +8,8 @@ export default function Layout() {
     <div className="flex flex-col min-h-screen">
        <ScrollToTop />
       <Header />
-      <main className="flex-grow">
-        <Outlet /> {/* Aquí se renderizarán las páginas */}
+      <main className="flex-grow relative z-10">
+        <Outlet />
       </main>
       <Footer />
     </div>

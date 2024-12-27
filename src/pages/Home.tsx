@@ -28,7 +28,7 @@ const Home: React.FC = () => {
     },
     {
       name: 'Eduardo A. Merola',
-      image: '/assets/img/luis-rodriguez.jpg',
+      image: '/assets/img/luis-rodriguez.png',
     },
   ];
 
@@ -57,7 +57,7 @@ const Home: React.FC = () => {
               className=" absolute w-[96px] h-[96px] rounded-full object-cover z-40"
             />
             <img
-              src="/assets/img/luis-rodriguez.jpg"
+              src="/assets/img/luis-rodriguez.png"
               alt="Experto 2"
               className="img-experts absolute w-[96px] h-[96px] rounded-full object-cover z-30"
             />
