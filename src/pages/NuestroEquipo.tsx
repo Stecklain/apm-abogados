@@ -169,7 +169,7 @@ const NuestroEquipo: React.FC = () => {
                   {member.name}
                 </h3>
                 <a
-                  href={member.cvLink}
+                
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-customBlue underline text-sm hover:text-blue-950"
