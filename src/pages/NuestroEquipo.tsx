@@ -6,13 +6,17 @@ const NuestroEquipo: React.FC = () => {
 
   const teamMembers = [
     {
-      img: "/assets/img/terminar_el_secundario_testimonio_16.png",
+      img: "/assets/img/juan-perez.png",
       name: "Enrique Manuel Falcón",
       role: "Abogado",
       cvLink: "/assets/cv/enrique-manuel-falcon.pdf",
       details: {
-        formación: "Facultad de Derecho de la Universidad de Buenos Aires (2021) Diploma de Honor Universidad Torcuato Di Tella, Especialización en Derecho Penal (En curso).",
-        miembro: "Colegio Publico de Abogados de la Capital Federal.",
+        formación: "Facultad de derecho de la Universidad de Buenos Aires (1966). ",
+        miembro:
+          "Academia Nacional de Derecho y Ciencias Sociales de Buenos Aires, Asociación Argentina de Derecho Procesal, Instituto Iberoamericano de Derecho Procesal, Consejo Académico del Consejo de Redacción de la Revista de Derecho Procesal Ed. Rubinzal-Culzoni Editores, Co-fundador y titular de la Asociación Argentina de Derecho Procesal, Tribunal de Arbitraje General y Mediación (UBA - UBATEC S.A. y Colegio de Escribanos de Capital Federal), Comisión Consultora del SAIJ, Derecho Procesal (1989), Instituto de Derechos del Consumidor de la Universidad Notarial Argentina, Miembro consultor Internacional de 'Principios y Reglas de Procedimiento Civil Trasnacional' (The American Law Institute-Unidroit), Director del Instituto de Derecho Procesal de la Academia Nacional de Derecho y Ciencias Sociales de Buenos Aires, Director General de Rubinzal online.",
+          premios:
+          "Tesis Premio Facultad y Medalla de Oro (2002). , Universidad de Buenos Aires (UBA), Obtuvo el primer Premio Academia Nacional de Derecho y Ciencias Sociales de Buenos Aires por el 'Tratado de la Prueba' (2004), KONEX Humanidades (2016), como una de las cinco personas más destacadas de la última década en 'Derecho Procesal, Internacional y de la Integración.'",
+
         profesor: "Auxiliar de Segund Elementos del Derecho Procesal Civil y Comercial (Facultad de Derecho de la UBA).",
         especialidades: "Derecho Comercial, Derecho Penal.",
         idiomas: "Español, Inglés",
@@ -20,7 +24,7 @@ const NuestroEquipo: React.FC = () => {
       },
     },
     {
-      img: "/assets/img/terminar_el_secundario_testimonio_17.png",
+      img: "/assets/img/juan-perez.png",
       name: "Osvaldo A. Prato",
       role: "Abogado",
       cvLink: "/assets/cv/osvaldo-a-prato.pdf",
@@ -34,7 +38,7 @@ const NuestroEquipo: React.FC = () => {
       },
     },
     {
-      img: "/assets/img/terminar_el_secundario_testimonio_19.png",
+      img: "/assets/img/juan-perez.png",
       name: "Eduardo A. Merola",
       role: "Abogado",
       cvLink: "/assets/cv/eduardo-a-merola.pdf",
@@ -48,7 +52,7 @@ const NuestroEquipo: React.FC = () => {
       },
     },
     {
-      img: "/assets/img/terminar_el_secundario_testimonio_16.png",
+      img: "/assets/img/juan-perez.png",
       name: "Enrique Manuel Falcón",
       role: "Abogado",
       cvLink: "/assets/cv/enrique-manuel-falcon.pdf",
@@ -62,7 +66,7 @@ const NuestroEquipo: React.FC = () => {
       },
     },
     {
-      img: "/assets/img/terminar_el_secundario_testimonio_17.png",
+      img: "/assets/img/juan-perez.png",
       name: "Osvaldo A. Prato",
       role: "Abogado",
       cvLink: "/assets/cv/osvaldo-a-prato.pdf",
@@ -76,7 +80,7 @@ const NuestroEquipo: React.FC = () => {
       },
     },
     {
-      img: "/assets/img/terminar_el_secundario_testimonio_19.png",
+      img: "/assets/img/juan-perez.png",
       name: "Eduardo A. Merola",
       role: "Abogado",
       cvLink: "/assets/cv/eduardo-a-merola.pdf",
@@ -90,7 +94,7 @@ const NuestroEquipo: React.FC = () => {
       },
     },
     {
-      img: "/assets/img/terminar_el_secundario_testimonio_16.png",
+      img: "/assets/img/juan-perez.png",
       name: "Enrique Manuel Falcón",
       role: "Abogado",
       cvLink: "/assets/cv/enrique-manuel-falcon.pdf",
@@ -104,7 +108,7 @@ const NuestroEquipo: React.FC = () => {
       },
     },
     {
-      img: "/assets/img/terminar_el_secundario_testimonio_17.png",
+      img: "/assets/img/juan-perez.png",
       name: "Osvaldo A. Prato",
       role: "Abogado",
       cvLink: "/assets/cv/osvaldo-a-prato.pdf",
@@ -169,7 +173,7 @@ const NuestroEquipo: React.FC = () => {
                   {member.name}
                 </h3>
                 <a
-                
+
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-customBlue underline text-sm hover:text-blue-950"
@@ -201,7 +205,7 @@ const NuestroEquipo: React.FC = () => {
 
       {selectedMember && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-          <div className="bg-white w-[1043px] h-[868px] p-6  shadow-lg relative flex flex-col items-center">
+          <div className="bg-white w-[1043px] h-[868px] p-6 shadow-lg relative flex flex-col items-center overflow-y-auto max-h-[90vh] rounded-md">
             <button
               onClick={closePopup}
               className="absolute top-2 right-2 text-gray-500 hover:text-gray-800"
@@ -209,7 +213,7 @@ const NuestroEquipo: React.FC = () => {
               ✕
             </button>
             <div className="flex flex-col w-[800px]">
-              <div className="flex flex-row items-center  ">
+              <div className="flex flex-row items-center">
                 {/* Imagen */}
                 <img
                   src={selectedMember.img}
@@ -217,22 +221,42 @@ const NuestroEquipo: React.FC = () => {
                   className="w-[230px] h-[230px] object-cover rounded-full"
                 />
                 {/* Nombre */}
-                <div className="group-member-info flex flex-col  items-start px-6">
-                  <h3 className="name-member font-bold ">{selectedMember.name}</h3>
-                  <p className="job-member  text-start">{selectedMember.role}</p>
+                <div className="group-member-info flex flex-col items-start px-6">
+                  <h3 className="name-member font-bold">{selectedMember.name}</h3>
+                  <p className="job-member text-start">{selectedMember.role}</p>
                 </div>
               </div>
 
-
+              {/* Información Detallada */}
               <div className="text-left text-lg text-gray-800 mt-4">
                 <p className="mt-4">
                   <strong>Formación:</strong>
                   <p>{selectedMember.details.formación}</p>
                 </p>
                 <p className="mt-4">
-                  <strong>Miembro:</strong>
-                  <p>{selectedMember.details.miembro}</p>
+                  <strong>Miembro:<br /></strong>-
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: selectedMember.details.miembro.replace(
+                        /, /g,
+                        "<br />-"
+                      ),
+                    }}
+                  ></span>
                 </p>
+                {selectedMember.details.premios && ( // Aquí aplicamos el ternario
+    <p className="mt-4">
+      <strong>Premios:<br /></strong>-
+      <span
+        dangerouslySetInnerHTML={{
+          __html: selectedMember.details.premios.replace(
+            /, /g,
+            "<br />-"
+          ),
+        }}
+      ></span>
+    </p>
+  )}
                 <p className="mt-4">
                   <strong>Profesor:</strong>
                   <p>{selectedMember.details.profesor}</p>
@@ -261,6 +285,7 @@ const NuestroEquipo: React.FC = () => {
           </div>
         </div>
       )}
+
     </div>
   );
 };

@@ -31,9 +31,31 @@ const ElEstudio: React.FC = () => {
         </div>
       </section>
 
-      <section className="section-white-elestudio bg-white">
+      <section className="section-white-elestudio bg-white  flex items-center justify-center">
+  <div className="container max-w-6xl grid grid-cols-1  ">
+    {/* Columna izquierda */}
+    
 
-      </section>
+    {/* Columna derecha */}
+    <div className="text-center ">
+  <p className="section-white-elestudio-p mb-6">
+    Recogiendo <strong>investigaciones</strong> de las <strong>asociaciones civiles</strong> de defensa del <strong>consumidor</strong> sumado a las consultas y quejas de las personas que acuden a ellas y luego derivan a este <strong>estudio jurídico</strong>, pudieron llevarse adelante <strong>acciones judiciales</strong> no solo en temas <strong>financieros clásicos</strong>, como el reproche de <strong>intereses usurarios</strong>, cobro de <strong>gastos inexistentes</strong>, falta de <strong>información</strong>, <strong>abuso de posición dominante</strong>, etcétera, sino también en un área muy específica y con poco desarrollo que requiere de <strong>conocimientos especiales</strong>, tal como lo es el <strong>mercado de capitales</strong>.
+  </p>
+  <p className="section-white-elestudio-p mb-6">
+    Recogiendo <strong>investigaciones</strong> de las <strong>asociaciones civiles</strong> de defensa del <strong>consumidor</strong> sumado a las consultas y quejas de las personas que acuden a ellas y luego derivan a este <strong>estudio jurídico</strong>, pudieron llevarse adelante <strong>acciones judiciales</strong> no solo en temas <strong>financieros clásicos</strong>, como el reproche de <strong>intereses usurarios</strong>, cobro de <strong>gastos inexistentes</strong>, falta de <strong>información</strong>, <strong>abuso de posición dominante</strong>, etcétera, sino también en un área muy específica y con poco desarrollo que requiere de <strong>conocimientos especiales</strong>, tal como lo es el <strong>mercado de capitales</strong>.
+  </p>
+  <p className="section-white-elestudio-p mb-6">
+    Dada la natural <strong>confidencialidad</strong> que requieren las personas respecto a sus <strong>inversiones</strong>, las <strong>acciones de clase</strong> son un mecanismo ideal para <strong>resguardar los derechos</strong> de los <strong>consumidores</strong>, preservando siempre sus <strong>identidades</strong>.
+  </p>
+  <p className="section-white-elestudio-p">
+    El sistema de <strong>acciones de clase</strong> posee una larga historia en países como <strong>Alemania</strong>, <strong>Bélgica</strong>, <strong>Brasil</strong>, <strong>Chile</strong>, <strong>España</strong>, <strong>Francia</strong>, <strong>Grecia</strong>, <strong>Holanda</strong>, <strong>Italia</strong>, entre otros, encontrándose en <strong>Argentina</strong> en un <strong>continuo desarrollo</strong>, del cual formamos parte hace más de <strong>20 años</strong>.
+  </p>
+</div>
+
+  </div>
+</section>
+
+
 
       <section className="relative h-[400px] bg-cover bg-center " style={{ backgroundImage: "url('/assets/img/maps-img.png')" }}>
         {/* Fondo con opacidad */}

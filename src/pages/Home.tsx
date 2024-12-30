@@ -43,8 +43,8 @@ const Home: React.FC = () => {
     <div style={{ backgroundImage: "url('/assets/img/banner-home.png')" }}>
       <div className="banner-home relative z-10 text-left bg-cover bg-center h-[883px] flex flex-col items-start justify-center">
         {/* Rectangulo blanco */}
-        <span className="span-white-1 absolute left-0 h-[95px] bg-white  z-0"></span>
-        <span className="span-white-2 absolute right-0 h-[95px] bg-white  z-0"></span>
+        {/* <span className="span-white-1 absolute left-0 h-[95px] bg-white  z-0"></span>
+        <span className="span-white-2 absolute right-0 h-[95px] bg-white  z-0"></span> */}
         <div className="flex flex-col items-start relative z-20">
           {/* Titulo */}
           <h2 className="text-xl md:text-2xl font-medium text-white mb-6">Nuestros expertos</h2>
@@ -76,8 +76,8 @@ const Home: React.FC = () => {
 
         {/* Titulo principal */}
         <h1 className="custom-title-home text-5xl md:text-5xl font-bold text-white mb-4 relative  z-0">
-          <span className="text-customBlue">Más</span> de 20 años defendiendo tus derechos con compromiso y excelencia{' '}
-          <span className="text-customBlue">legal.</span>
+          <span className="text-customBlue bg-white">Más</span> de 20 años defendiendo tus derechos con compromiso y excelencia{' '}
+          <span className="text-customBlue bg-white ">legal.</span>
         </h1>
 
         {/* Subtitulo */}
@@ -116,7 +116,7 @@ const Home: React.FC = () => {
             </p>
             <Link
               to="/contacto"
-              className="px-10 py-3 bg-customBlue text-white  shadow hover:text-customBlue  hover:bg-white transition">
+              className="px-10 py-3 bg-customBlue text-white  shadow hover:text-customBlue  hover:bg-white border border-customBlue transition">
               Escribinos
             </Link>
           </div>
@@ -180,7 +180,10 @@ const Home: React.FC = () => {
                 </p>
                 {/* Flecha que aparece en hover */}
                 <button className="absolute top-40 right-1/2 transform translate-x-1/2 opacity-0 group-hover:opacity-100 text-customBlue border border-customBlue px-2 py-1 rounded-full shadow transition-all duration-300">
-                  ➔
+                  <Link
+                    to="/areas-de-practica">
+                    ➔
+                  </Link>
                 </button>
               </div>
             </div>
@@ -198,8 +201,11 @@ const Home: React.FC = () => {
                   Regula tanto las transacciones comerciales como las empresas, los contratos mercantiles, las
                   sociedades comerciales y las quiebras.
                 </p>
-                <button className="absolute top-40 right-1/2 transform translate-x-1/2 opacity-0 group-hover:opacity-100 text-customBlue px-2 py-1 border border-customBlue p-2 rounded-full shadow transition-all duration-300">
-                  ➔
+                <button className="absolute top-40 right-1/2 transform translate-x-1/2 opacity-0 group-hover:opacity-100 text-customBlue border border-customBlue px-2 py-1 rounded-full shadow transition-all duration-300">
+                  <Link
+                    to="/areas-de-practica">
+                    ➔
+                  </Link>
                 </button>
               </div>
             </div>
@@ -217,8 +223,11 @@ const Home: React.FC = () => {
                   Se ocupa de los aspectos más comunes de la vida diaria de las personas, como contratos, propiedad,
                   familia, sucesiones, y daños, entre otros.
                 </p>
-                <button className="absolute top-40 right-1/2 transform translate-x-1/2 opacity-0 group-hover:opacity-100 text-customBlue px-2 py-1 border border-customBlue p-2 rounded-full shadow transition-all duration-300">
-                  ➔
+                <button className="absolute top-40 right-1/2 transform translate-x-1/2 opacity-0 group-hover:opacity-100 text-customBlue border border-customBlue px-2 py-1 rounded-full shadow transition-all duration-300">
+                  <Link
+                    to="/areas-de-practica">
+                    ➔
+                  </Link>
                 </button>
               </div>
             </div>
@@ -236,8 +245,11 @@ const Home: React.FC = () => {
                   Regula las relaciones laborales entre empleadores y trabajadores, protegiendo los derechos de los
                   empleados y estableciendo las obligaciones de los empleadores.
                 </p>
-                <button className="absolute top-40 right-1/2 transform translate-x-1/2 opacity-0 group-hover:opacity-100  text-customBlue px-2 py-1  border border-customBlue p-2 rounded-full shadow transition-all duration-300">
-                  ➔
+                <button className="absolute top-40 right-1/2 transform translate-x-1/2 opacity-0 group-hover:opacity-100 text-customBlue border border-customBlue px-2 py-1 rounded-full shadow transition-all duration-300">
+                  <Link
+                    to="/areas-de-practica">
+                    ➔
+                  </Link>
                 </button>
               </div>
             </div>
