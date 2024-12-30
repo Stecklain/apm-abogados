@@ -14,7 +14,7 @@ const NuestroEquipo: React.FC = () => {
         formación: "Facultad de derecho de la Universidad de Buenos Aires (1966). ",
         miembro:
           "Academia Nacional de Derecho y Ciencias Sociales de Buenos Aires, Asociación Argentina de Derecho Procesal, Instituto Iberoamericano de Derecho Procesal, Consejo Académico del Consejo de Redacción de la Revista de Derecho Procesal Ed. Rubinzal-Culzoni Editores, Co-fundador y titular de la Asociación Argentina de Derecho Procesal, Tribunal de Arbitraje General y Mediación (UBA - UBATEC S.A. y Colegio de Escribanos de Capital Federal), Comisión Consultora del SAIJ, Derecho Procesal (1989), Instituto de Derechos del Consumidor de la Universidad Notarial Argentina, Miembro consultor Internacional de 'Principios y Reglas de Procedimiento Civil Trasnacional' (The American Law Institute-Unidroit), Director del Instituto de Derecho Procesal de la Academia Nacional de Derecho y Ciencias Sociales de Buenos Aires, Director General de Rubinzal online.",
-          premios:
+        premios:
           "Tesis Premio Facultad y Medalla de Oro (2002). , Universidad de Buenos Aires (UBA), Obtuvo el primer Premio Academia Nacional de Derecho y Ciencias Sociales de Buenos Aires por el 'Tratado de la Prueba' (2004), KONEX Humanidades (2016), como una de las cinco personas más destacadas de la última década en 'Derecho Procesal, Internacional y de la Integración.'",
 
         profesor: "Auxiliar de Segund Elementos del Derecho Procesal Civil y Comercial (Facultad de Derecho de la UBA).",
@@ -245,18 +245,18 @@ const NuestroEquipo: React.FC = () => {
                   ></span>
                 </p>
                 {selectedMember.details.premios && ( // Aquí aplicamos el ternario
-    <p className="mt-4">
-      <strong>Premios:<br /></strong>-
-      <span
-        dangerouslySetInnerHTML={{
-          __html: selectedMember.details.premios.replace(
-            /, /g,
-            "<br />-"
-          ),
-        }}
-      ></span>
-    </p>
-  )}
+                  <p className="mt-4">
+                    <strong>Premios:<br /></strong>-
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: selectedMember.details.premios.replace(
+                          /, /g,
+                          "<br />-"
+                        ),
+                      }}
+                    ></span>
+                  </p>
+                )}
                 <p className="mt-4">
                   <strong>Profesor:</strong>
                   <p>{selectedMember.details.profesor}</p>

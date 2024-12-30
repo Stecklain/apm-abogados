@@ -33,65 +33,77 @@ const Home: React.FC = () => {
   ];
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1 >= members.length - 2 ? 0 : prevIndex + 1));
+    setCurrentIndex((prevIndex) =>
+      prevIndex + 1 >= members.length ? 0 : prevIndex + 1
+    );
   };
-
+  
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? members.length - 3 : prevIndex - 1));
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? members.length - 1 : prevIndex - 1
+    );
   };
+  
+  
   return (
     <div style={{ backgroundImage: "url('/assets/img/banner-home.png')" }}>
-      <div className="banner-home relative z-10 text-left bg-cover bg-center h-[883px] flex flex-col items-start justify-center">
-        {/* Rectangulo blanco */}
-        {/* <span className="span-white-1 absolute left-0 h-[95px] bg-white  z-0"></span>
-        <span className="span-white-2 absolute right-0 h-[95px] bg-white  z-0"></span> */}
-        <div className="flex flex-col items-start relative z-20">
-          {/* Titulo */}
-          <h2 className="text-xl md:text-2xl font-medium text-white mb-6">Nuestros expertos</h2>
+      <div className="banner-home relative z-10 text-left bg-cover bg-center h-[883px] flex flex-col items-start justify-center px-4 md:px-8 lg:px-20">
+  {/* Rectángulo blanco (opcional) */}
+  {/* <span className="span-white-1 absolute left-0 h-[95px] bg-white  z-0"></span>
+  <span className="span-white-2 absolute right-0 h-[95px] bg-white  z-0"></span> */}
 
-          {/* Contenedor de imagenes */}
-          <div className="img-container-home relative w-[200px] h-[100px]">
-            <img
-              src="/assets/img/carlos-lopez.png"
-              alt="Experto 1"
-              className=" absolute w-[96px] h-[96px] rounded-full object-cover z-40"
-            />
-            <img
-              src="/assets/img/luis-rodriguez.png"
-              alt="Experto 2"
-              className="img-experts absolute w-[96px] h-[96px] rounded-full object-cover z-30"
-            />
-            <img
-              src="/assets/img/carlos-lopez.png"
-              alt="Experto 3"
-              className="img-experts1 absolute w-[96px] h-[96px] rounded-full object-cover z-20"
-            />
-            <img
-              src="/assets/img/carlos-lopez.png"
-              alt="Experto 4"
-              className="img-experts2 absolute w-[96px] h-[96px] rounded-full object-cover z-10"
-            />
-          </div>
-        </div>
+  <div className="flex flex-col items-start relative z-20">
+    {/* Titulo */}
+    <h2 className="text-lg md:text-xl font-medium text-white mb-4 md:mb-6">Nuestros expertos</h2>
 
-        {/* Titulo principal */}
-        <h1 className="custom-title-home text-5xl md:text-5xl font-bold text-white mb-4 relative  z-0">
-          <span className="text-customBlue bg-white">Más</span> de 20 años defendiendo tus derechos con compromiso y excelencia{' '}
-          <span className="text-customBlue bg-white ">legal.</span>
-        </h1>
+    {/* Contenedor de imágenes */}
+    <div className="img-container-home relative w-[150px] h-[80px] md:w-[200px] md:h-[100px]">
+      <img
+        src="/assets/img/carlos-lopez.png"
+        alt="Experto 1"
+        className="absolute w-[64px] h-[64px] md:w-[96px] md:h-[96px] rounded-full object-cover z-40"
+      />
+      <img
+        src="/assets/img/luis-rodriguez.png"
+        alt="Experto 2"
+        className="absolute w-[64px] h-[64px] md:w-[96px] md:h-[96px] rounded-full object-cover z-30"
+        style={{ left: '25%' }}
+      />
+      <img
+        src="/assets/img/carlos-lopez.png"
+        alt="Experto 3"
+        className="absolute w-[64px] h-[64px] md:w-[96px] md:h-[96px] rounded-full object-cover z-20"
+        style={{ left: '50%' }}
+      />
+      <img
+        src="/assets/img/carlos-lopez.png"
+        alt="Experto 4"
+        className="absolute w-[64px] h-[64px] md:w-[96px] md:h-[96px] rounded-full object-cover z-10"
+        style={{ left: '75%' }}
+      />
+    </div>
+  </div>
 
-        {/* Subtitulo */}
-        <h2 className="custom-subtitle-home text-gray-300 mb-6 relative z-20">
-          Soluciones jurídicas de confianza en derecho del consumidor, mercado de capitales y más.
-        </h2>
+  {/* Título principal */}
+  <h1 className="custom-title-home w-[100%] sm:w-[60%] text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 relative z-0">
+    <span className="text-customBlue bg-white">Más</span> de 20 años defendiendo tus derechos con compromiso y excelencia{' '}
+    <span className="text-customBlue bg-white">legal.</span>
+  </h1>
 
-        {/* Boton consulta*/}
-        <a
-          href="#contact-form"
-          className="custom-button-home text-center flex items-center justify-center text-white hover:text-customBlue hover:bg-white text-lg font-medium shadow-md transition relative z-20">
-          Hacer una consulta
-        </a>
-      </div>
+  {/* Subtítulo */}
+  <h2 className="custom-subtitle-home w-[100%] sm:w-[619px] text-sm md:text-base lg:text-lg text-gray-300 mb-4 md:mb-6 relative z-20">
+    Soluciones jurídicas de confianza en derecho del consumidor, mercado de capitales y más.
+  </h2>
+
+  {/* Botón consulta */}
+  <a
+    href="#contact-form"
+    className="custom-button-home w-[100%] sm:w-[250px] text-center flex items-center justify-center bg-customBlue text-white px-6 py-2 md:px-8 md:py-3 hover:text-customBlue hover:bg-white text-sm md:text-lg font-medium shadow-md transition relative z-20"
+  >
+    Hacer una consulta
+  </a>
+</div>
+
 
       <div className="flex flex-col items-center bg-white pt-16  relative w-full">
         {/* Sección superior con imagen y texto */}
@@ -164,9 +176,9 @@ const Home: React.FC = () => {
           </p>
 
           {/* Tarjetas */}
-          <div className="container-cards-home grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="container-cards-home grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4 justify-items-center px-4">
             {/* Tarjeta 1 */}
-            <div className="cards-home group shadow-xl overflow-hidden bg-white flex flex-col items-center text-center transition-all duration-300 hover:h-[530px]">
+            <div className="cards-home group shadow-xl overflow-hidden bg-white flex flex-col items-center text-center transition-all duration-300 w-[270px] h-[490px] hover:h-[500px] sm:w-[380px] sm:h-[530px] sm:hover:h-[550px]">
               <img
                 src="/assets/img/derecho-consumo.jpeg"
                 alt="Derecho de consumo"
@@ -179,7 +191,7 @@ const Home: React.FC = () => {
                   y servicios.
                 </p>
                 {/* Flecha que aparece en hover */}
-                <button className="absolute top-40 right-1/2 transform translate-x-1/2 opacity-0 group-hover:opacity-100 text-customBlue border border-customBlue px-2 py-1 rounded-full shadow transition-all duration-300">
+                <button className="absolute top-40 right-1/2 transform translate-x-1/2 opacity-0 group-hover:opacity-100 text-customBlue border border-customBlue px-2 py-1 rounded-full shadow transition-all duration-300 mt-6 sm:mt-6">
                   <Link
                     to="/areas-de-practica">
                     ➔
@@ -189,7 +201,7 @@ const Home: React.FC = () => {
             </div>
 
             {/* Tarjeta 2 */}
-            <div className="cards-home group shadow-xl overflow-hidden bg-white flex flex-col items-center text-center transition-all duration-300 hover:h-[530px]">
+            <div className="cards-home group shadow-xl overflow-hidden bg-white flex flex-col items-center text-center transition-all duration-300 w-[270px] h-[490px] hover:h-[500px] sm:w-[380px] sm:h-[530px] sm:hover:h-[550px]">
               <img
                 src="/assets/img/derecho-comercial.jpeg"
                 alt="Derecho comercial"
@@ -201,7 +213,7 @@ const Home: React.FC = () => {
                   Regula tanto las transacciones comerciales como las empresas, los contratos mercantiles, las
                   sociedades comerciales y las quiebras.
                 </p>
-                <button className="absolute top-40 right-1/2 transform translate-x-1/2 opacity-0 group-hover:opacity-100 text-customBlue border border-customBlue px-2 py-1 rounded-full shadow transition-all duration-300">
+                <button className="absolute top-40 right-1/2 transform translate-x-1/2 opacity-0 group-hover:opacity-100 text-customBlue border border-customBlue px-2 py-1 rounded-full shadow transition-all duration-300 mt-6 sm:mt-6">
                   <Link
                     to="/areas-de-practica">
                     ➔
@@ -211,7 +223,7 @@ const Home: React.FC = () => {
             </div>
 
             {/* Tarjeta 3 */}
-            <div className="cards-home group shadow-xl overflow-hidden bg-white flex flex-col items-center text-center transition-all duration-300 hover:h-[530px]">
+            <div className="cards-home group shadow-xl overflow-hidden bg-white flex flex-col items-center text-center transition-all duration-300 w-[270px] h-[490px] hover:h-[500px] sm:w-[380px] sm:h-[530px] sm:hover:h-[550px]">
               <img
                 src="/assets/img/derecho-civil.jpeg"
                 alt="Derecho civil"
@@ -223,7 +235,7 @@ const Home: React.FC = () => {
                   Se ocupa de los aspectos más comunes de la vida diaria de las personas, como contratos, propiedad,
                   familia, sucesiones, y daños, entre otros.
                 </p>
-                <button className="absolute top-40 right-1/2 transform translate-x-1/2 opacity-0 group-hover:opacity-100 text-customBlue border border-customBlue px-2 py-1 rounded-full shadow transition-all duration-300">
+                <button className="absolute top-40 right-1/2 transform translate-x-1/2 opacity-0 group-hover:opacity-100 text-customBlue border border-customBlue px-2 py-1 rounded-full shadow transition-all duration-300 mt-6 sm:mt-6">
                   <Link
                     to="/areas-de-practica">
                     ➔
@@ -233,7 +245,7 @@ const Home: React.FC = () => {
             </div>
 
             {/* Tarjeta 4 */}
-            <div className="cards-home group shadow-xl overflow-hidden bg-white flex flex-col items-center text-center transition-all duration-300 hover:h-[530px]">
+            <div className="cards-home group shadow-xl overflow-hidden bg-white flex flex-col items-center text-center transition-all duration-300 w-[270px] h-[490px] hover:h-[500px] sm:w-[380px] sm:h-[530px] sm:hover:h-[550px]">
               <img
                 src="/assets/img/derecho-trabajo.jpeg"
                 alt="Derecho de trabajo"
@@ -245,7 +257,7 @@ const Home: React.FC = () => {
                   Regula las relaciones laborales entre empleadores y trabajadores, protegiendo los derechos de los
                   empleados y estableciendo las obligaciones de los empleadores.
                 </p>
-                <button className="absolute top-40 right-1/2 transform translate-x-1/2 opacity-0 group-hover:opacity-100 text-customBlue border border-customBlue px-2 py-1 rounded-full shadow transition-all duration-300">
+                <button className="absolute top-40 right-1/2 transform translate-x-1/2 opacity-0 group-hover:opacity-100 text-customBlue border border-customBlue px-2 py-1 rounded-full shadow transition-all duration-300 mt-6 sm:mt-6">
                   <Link
                     to="/areas-de-practica">
                     ➔
@@ -264,51 +276,71 @@ const Home: React.FC = () => {
             </Link>
           </div>
         </div>
-        {/* Miembros del estudio */}
-        <section className=" bg-amber-50 w-full">
-          <div className="team-carousel text-center bg-lightYellow py-32 ">
-            {/* Título */}
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Miembros del estudio</h2>
-            <p className="text-gray-600 mb-16 max-w-2xl mx-auto">
-              Nuestro equipo está formado por abogados expertos en diversas áreas del derecho, comprometidos con ofrecer
-              soluciones legales efectivas y personalizadas para cada cliente.
-            </p>
+       {/* Miembros del estudio */}
+       <section className="bg-amber-50 w-full">
+  <div className="team-carousel text-center bg-lightYellow py-32">
+    {/* Título */}
+    <h2 className="text-3xl font-bold text-gray-800 mb-4">Miembros del estudio</h2>
+    <p className="text-gray-600 mb-16 max-w-2xl mx-auto">
+      Nuestro equipo está formado por abogados expertos en diversas áreas del derecho, comprometidos con ofrecer
+      soluciones legales efectivas y personalizadas para cada cliente.
+    </p>
 
-            {/* Carrusel */}
-            <div className="relative flex items-center justify-center gap-4">
-              {/* Botón izquierdo */}
-              <button
-                onClick={prevSlide}
-                className="absolute left-4 bg-gray-300 hover:bg-gray-400 p-3 rounded-full shadow-md transition-all z-10">
-                &larr;
-              </button>
+    {/* Carrusel */}
+    <div className="relative flex items-center justify-center">
+      {/* Botón izquierdo */}
+      <button
+        onClick={prevSlide}
+        className="absolute left-4 bg-gray-300 hover:bg-gray-400 p-3 rounded-full shadow-md transition-all z-10"
+      >
+        &larr;
+      </button>
 
-              {/* Contenedor de imágenes visibles */}
-              <div className="flex gap-20 overflow-hidden ">
-                {members.slice(currentIndex, currentIndex + 3).map((member, index) => (
-                  <div
-                    key={index}
-                    className="relative group w-[300px] h-[300px] rounded-full overflow-hidden shadow-lg flex-shrink-0">
-                    <img src={member.image} alt={member.name} className="object-cover w-full h-full" />
-                    {/* Hover con flecha */}
-                    <button className="absolute inset-0 flex items-end  justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-all">
-                      <div className=" p-2 mb-6 rounded-full shadow-md">
-                        <span className="text-white  text-lg border-2 px-2 py-1 rounded-full ">&rarr;</span>
-                      </div>
-                    </button>
+      {/* Contenedor de imágenes visibles */}
+      <div className="overflow-hidden w-full max-w-[320px] flex justify-center">
+        <div
+          className="flex transition-transform duration-300"
+          style={{
+            transform: `translateX(-${currentIndex * 100}%)`,
+          }}
+        >
+          {members.map((member, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 w-full flex justify-center items-center"
+            >
+              <div className="relative group w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] rounded-full overflow-hidden shadow-lg">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="object-cover w-full h-full"
+                />
+                {/* Botón hover */}
+                <button className="absolute inset-0 flex items-end justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-all">
+                  <div className="p-2 mb-6 rounded-full shadow-md">
+                    <span className="text-white text-lg border-2 px-2 py-1 rounded-full">
+                      &rarr;
+                    </span>
                   </div>
-                ))}
+                </button>
               </div>
-
-              {/* Botón derecho */}
-              <button
-                onClick={nextSlide}
-                className="absolute right-4 bg-gray-300 hover:bg-gray-400 p-3 rounded-full shadow-md transition-all z-10">
-                &rarr;
-              </button>
             </div>
-          </div>
-        </section>
+          ))}
+        </div>
+      </div>
+
+      {/* Botón derecho */}
+      <button
+        onClick={nextSlide}
+        className="absolute right-4 bg-gray-300 hover:bg-gray-400 p-3 rounded-full shadow-md transition-all z-10"
+      >
+        &rarr;
+      </button>
+    </div>
+  </div>
+</section>
+
+
         {/* Contacto */}
         <div id="contact-form" className="bg-customBlue text-white w-full py-12 px-40 ">
           <h1 className="flex items-center justify-center mb-14 text-5xl">Contacto</h1>
