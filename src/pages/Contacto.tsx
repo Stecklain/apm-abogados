@@ -1,6 +1,35 @@
-import React from "react";
+
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
 
 const Contacto: React.FC = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'YOUR_SERVICE_ID', // Reemplaza con tu Service ID
+        'YOUR_TEMPLATE_ID', // Reemplaza con tu Template ID
+        form.current,
+        'YOUR_PUBLIC_KEY' // Reemplaza con tu Public Key
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert('Mensaje enviado con éxito.');
+        },
+        (error) => {
+          console.log(error.text);
+          alert('Hubo un error al enviar el mensaje.');
+        }
+      );
+
+    e.target.reset(); // Opcional: limpia los campos del formulario
+  };
+
+
   return (
     <div>
       <section className=" areasdepractica-banner flex flex-row items-center mx-auto  py-12">
@@ -41,25 +70,34 @@ const Contacto: React.FC = () => {
           
 
             {/* Formulario */}
-            <form className="flex flex-col gap-4">
-              <h4>Nombre</h4>
-              <input
-                type="text"
-                className="p-1 bg-transparent text-white border-b border-gray-400 focus:outline-none focus:border-white transition duration-300 "
-              />
-              <h4>Email</h4>
-              <input
-                type="email"
-                className="p-1 bg-transparent text-white border-b border-gray-400 focus:outline-none focus:border-white transition duration-300"
-              />
-              <h4>Mensaje</h4>
-              <textarea className="p-3  text-white bg-customBlue border focus:outline-none "></textarea>
-              <button
-                type="submit"
-                className="w-fit bg-white text-customBlue px-20 py-4  shadow hover:bg-gray-300 transition">
-                Enviar
-              </button>
-            </form>
+            <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
+      <h4>Nombre</h4>
+      <input
+        type="text"
+        name="user_name"
+        className="p-1 bg-transparent text-white border-b border-gray-400 focus:outline-none focus:border-white transition duration-300 mb-6"
+        required
+      />
+      <h4>Email</h4>
+      <input
+        type="email"
+        name="user_email"
+        className="p-1 bg-transparent text-white border-b border-gray-400 focus:outline-none focus:border-white transition duration-300 mb-6"
+        required
+      />
+      <h4>Mensaje</h4>
+      <textarea
+        name="message"
+        className="p-10 text-white bg-customBlue border focus:outline-none mb-8"
+        required
+      ></textarea>
+      <button
+        type="submit"
+        className="w-fit bg-white text-customBlue px-20 py-4 shadow hover:bg-gray-300 transition"
+      >
+        Enviar
+      </button>
+    </form>
           </div>
 
           {/* Columna derecha: Mapa */}
