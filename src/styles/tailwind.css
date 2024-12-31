@@ -112,14 +112,14 @@ html {
   width: 1100px;
   margin-bottom: -90px;
 }
-.container-img-section2{
+/* .container-img-section2{
   padding-left: 155px;
   padding-right: 155px;
-}
+} */
 
 .img-section2{
-  width: 808px;
-  height: 559px;
+  /* width: 808px;
+  height: 559px; */
   left: 155px;
   top: -120px;
 
@@ -129,7 +129,7 @@ html {
   font-size: 50px;
 }
 .p-containerimg-section2{
-  font-size: 25px;
+  
   font-weight: 400;
   color: #0E121A;
 }
@@ -175,23 +175,27 @@ html {
   background-color: #D9D9D980;
   height: 550px;
 }
+.contacto-banner{
+  background-color: #D9D9D980;
+  height: 550px;
+}
 
 .img-banner-areasdepractica{
   width:1025px;
   height: 550px;
 }
 
-.contain-info-areasdepractica{
+/* .contain-info-areasdepractica{
   width: 619px;
 
-}
+} */
 .title-areasdepractica-banner{
-  font-size: 50px;
+  /* font-size: 50px; */
   color: #23314B
 }
 
 .p-banner-areasdepractica{
-  font-size: 22px;
+  /* font-size: 22px; */
   line-height: 30px;
 }
 .p-cards-areasdepractica{
@@ -213,10 +217,10 @@ html {
   font-size: 22px;
 }
 
-.img-banner-elestudio{
+/* .img-banner-elestudio{
   width:1025px;
   height: 550px;
-}
+} */
 .section-white-elestudio{
   width: 100%;
   height: 500px;
