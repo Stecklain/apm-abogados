@@ -9,7 +9,7 @@ import Layout from './pages/Layout.tsx';
 export const router = createBrowserRouter([
   {
     path: '/',
-    element: <Layout />, // Un layout general que incluye Header y Footer
+    element: <Layout />,
     children: [
       { path: '/', element: <Home /> },
       { path: '/areas-de-practica', element: <AreasDePractica /> },

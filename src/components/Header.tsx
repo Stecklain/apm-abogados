@@ -5,8 +5,8 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="header-background text-white flex relative z-20">
-      <div className="container mx-auto px-4 flex justify-between items-center">
+    <header className="header-background text-white flex z-20 w-full relative">
+      <div className="container mx-auto px-4 flex gap-14 justify-center md:justify-between items-center">
         {/* Logo */}
         <div className="logo flex items-center">
           {/* Logo Desktop */}
@@ -31,20 +31,23 @@ const Header: React.FC = () => {
         {/* Navigation */}
         <nav
           className={`absolute top-[70px] left-0 w-full bg-[#23314B] text-white flex flex-col items-center space-y-4 transition-all duration-300 ${
-            isMenuOpen ? 'h-auto opacity-100' : 'h-0 opacity-0 overflow-hidden'
-          } lg:static lg:h-auto lg:opacity-100 lg:overflow-visible lg:flex lg:flex-row lg:space-x-14 lg:justify-center lg:items-center lg:space-y-0`}
+            isMenuOpen ? 'h-auto opacity-100 py-8' : 'h-0 opacity-0 overflow-hidden'
+          } lg:static lg:h-auto lg:opacity-100 lg:overflow-visible lg:flex lg:flex-row lg:py-0 lg:space-x-14 lg:justify-center lg:items-center lg:space-y-0`}
         >
-          <Link to="/" className="hover:text-gray-300 transition">
+          <Link to="/" className="custom-link transition font-normal py-2 px-4 lg:py-0 lg:px-0">
             Inicio
           </Link>
-          <Link to="/areas-de-practica" className="hover:text-gray-300 transition">
+          <Link to="/areas-de-practica" className="custom-link transition font-normal py-2 px-4 lg:py-0 lg:px-0">
             Áreas de práctica
           </Link>
-          <Link to="/el-estudio" className="hover:text-gray-300 transition">
+          <Link to="/el-estudio" className="custom-link transition font-normal py-2 px-4 lg:py-0 lg:px-0">
             El estudio
           </Link>
-          <Link to="/nuestro-equipo" className="hover:text-gray-300 transition">
+          <Link to="/nuestro-equipo" className="custom-link transition font-normal py-2 px-4 lg:py-0 lg:px-0">
             Nuestro equipo
+          </Link>
+          <Link to="/contacto" className="custom-button-small text-white hover:bg-white hover:text-primary transition-all duration-500 ease-in-out border border-white lg:hidden">
+            Contacto
           </Link>
         </nav>
 
@@ -52,7 +55,7 @@ const Header: React.FC = () => {
         <div className="hidden lg:block">
           <Link
             to="/contacto"
-            className="custom-button-small text-white hover:bg-white hover:text-customBlue transition-all border border-white"
+            className="custom-button-small text-white hover:bg-white hover:text-primary transition-all duration-500 ease-in-out border border-white"
           >
             Contacto
           </Link>

@@ -5,8 +5,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#013E6E',
-        secondary: '#014F8D',
+        primary: '#23314B',
+        customPrimaryWhite: '#F8FFF7',
+        customSecondaryWhite: '#FFFEF1',
+        secondary: '#0E121A',
+        customSecondaryGray: '#3F4A5D',
         base: '#F7F7F7',
         baseDark: '#303131',
          customBlue: '#23314B',
@@ -14,7 +17,7 @@ export default {
       },
       fontFamily: {
         serif: ['serif'],
-        sans: ['Viga', 'Roboto'],
+        sans: ['Roboto'],
       },
     },
   },

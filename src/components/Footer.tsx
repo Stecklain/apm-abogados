@@ -2,14 +2,14 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-customBlue text-white py-6">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+    <footer className="bg-customBlue text-white w-full py-6">
+      <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center">
         {/* Columna Izquierda: Logo */}
-        <div className="mb-4 md:mb-0">
+        <div className="mb-6 flex flex-row items-center justify-center lg:mb-0">
           <img
-            src="/assets/img/APM-abogados-logo.svg" // Ajusta la ruta según tu proyecto
+            src="/assets/img/APM-abogados-logo.svg"
             alt="APM Abogados"
-            className="w-full h-full object-contain"
+            className="w-[80%] md:w-full h-full object-contain"
           />
         </div>
 

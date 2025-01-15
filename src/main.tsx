@@ -12,6 +12,9 @@ import './styles/tailwind.css';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import 'dayjs/locale/es';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const rootElement = document.getElementById('root')!;
 const root = createRoot(rootElement);
