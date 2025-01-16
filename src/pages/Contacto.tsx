@@ -73,8 +73,7 @@ const Contacto: React.FC<ContactoProps> = ({ isHomePage = false}) => {
             </h2>
             <p className="text-gray-300 mb-6 text-sm md:text-base text-center md:text-start">
               En APM Abogados, nos especializamos en ofrecer soluciones jurídicas eficaces y a medida para cada uno de
-              nuestros clientes. Complete el formulario y uno de nuestros abogados se pondrá en contacto con usted lo
-              antes posible.
+              nuestros clientes. Complete el formulario y uno de nuestros abogados se pondrá en contacto con usted a la brevedad.
             </p>
 
             {/* Formulario */}

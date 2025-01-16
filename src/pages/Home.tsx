@@ -35,38 +35,6 @@ const Home: React.FC = () => {
           </style>
           <div className="absolute inset-0 bg-[#23314B] opacity-10 z-0" />
 
-          <div className="flex flex-col items-start relative z-20">
-            {/* Titulo */}
-            <h2 className="text-lg md:text-xl roboto-regular-italic mb-4 md:mb-6 bg-transparent text-white px-2">Nuestros expertos</h2>
-
-            {/* Contenedor de imágenes */}
-            <div className="img-container-home relative w-[150px] h-[80px] md:w-[200px] md:h-[100px]">
-              <img
-                src="/assets/img/experts/VALERIA_MUSSI.jpeg"
-                alt="Nuestra experta Valeria Mussi"
-                className="absolute w-[64px] h-[64px] md:w-[96px] md:h-[96px] rounded-full object-cover z-40"
-              />
-              <img
-                src="/assets/img/experts/MARIELA_PRATO.jpeg"
-                alt="Nuestra experta Mariela Prato"
-                className="absolute w-[64px] h-[64px] md:w-[96px] md:h-[96px] rounded-full object-cover z-30"
-                style={{ left: '25%' }}
-              />
-              <img
-                src="/assets/img/experts/DANIEL_SPINA.jpeg"
-                alt="Nuestro experto Daniel Spina"
-                className="absolute w-[64px] h-[64px] md:w-[96px] md:h-[96px] rounded-full object-cover z-20"
-                style={{ left: '50%' }}
-              />
-              <img
-                src="/assets/img/experts/ENRIQUE_FALCON.jpeg"
-                alt="Nuestro experto Enrique Falcon"
-                className="absolute w-[64px] h-[64px] md:w-[96px] md:h-[96px] rounded-full object-cover z-10"
-                style={{ left: '75%' }}
-              />
-              <span className="flex justify-end items-center w-[135%] h-[80%] md:h-full text-white text-xl">+</span>
-            </div>
-          </div>
 
           {/* Título principal */}
           <h1 className="custom-title-home w-[100%] text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 relative z-0 leading-[2.5rem] md:leading-[3rem] lg:leading-[3.2rem]">
@@ -101,7 +69,7 @@ const Home: React.FC = () => {
             {/* Imagen */}
             <div className="w-full lg:w-1/2 flex justify-center">
               <img
-                src="/assets/img/abogado-work.png"
+                src="/assets/img/IMAGEN_LA_FIRMA.jpg"
                 alt="Abogado trabajando"
                 className="img-section2 z-20 shadow-lg w-full h-auto"
               />
@@ -112,8 +80,8 @@ const Home: React.FC = () => {
               <p className="p-containerimg-section2 text-primary leading-10 mb-6 max-w-[650px] text-[18px] md:text-2xl">
                 <strong className="text-secondary">APM Abogados</strong>, fundado en el{' '}
                 <strong className="text-secondary">año 2002</strong>, es un estudio jurídico especializado en
-                <strong className="text-secondary"> derecho del consumidor, comercial y Mercado de capitales</strong>,
-                incluyendo Acciones de Clase, tipo de proceso este último que hemos sustanciado en numerosas ocasiones
+                <strong className="text-secondary"> derecho del consumidor, derecho comercial y mercado de capitales</strong>,
+                incluyendo acciones de Clase, tipo de proceso este último que hemos sustanciado en numerosas ocasiones
                 ante la <strong className="text-secondary">Justicia Nacional</strong>, especialmente.
               </p>
               <Link
@@ -248,7 +216,7 @@ const Home: React.FC = () => {
                     className=" flex object-cover w-[325px] h-[229px] mt-6"
                   />
                   <div className="p-4 relative">
-                    <h4 className="text-xl md:text-2xl font-bold text-gray-800 mb-2">Derecho de trabajo</h4>
+                    <h4 className="text-xl md:text-2xl font-bold text-gray-800 mb-2">Derecho laboral</h4>
                     <p className="text-gray-600 text-sm md:text-[16px] leading-relaxed px-2 ">
                       {truncateText('Regula las relaciones laborales entre empleados y empleadores, procurando que los derechos y obligaciones de ambas partes se encuentren garantizados.', 180)}
                     </p>
