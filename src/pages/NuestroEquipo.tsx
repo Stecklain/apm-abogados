@@ -71,7 +71,7 @@ const NuestroEquipo: React.FC = () => {
                 <img
                   src={member.img}
                   alt={member.name}
-                  className="w-[320px] h-[320px] object-cover rounded-full mb-10 transition-transform group-hover:scale-110"
+                  className="w-[320px] h-[320px] object-cover rounded-full  mb-10 transition-transform group-hover:scale-110"
                 />
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">
                   {member.name}
