@@ -166,7 +166,7 @@ export const teamMembersHome = [
     name: 'Enrique Manuel Falcón',
     details: {
       formacion: `
-      Facultad de derecho de la Universidad de Buenos Aires (1966)`,
+      Facultad de derecho de la Universidad de Buenos Aires `,
       miembro: `➢ Academia Nacional de Derecho y Ciencias Sociales de Buenos Aires,
   ➢ Asociación Argentina de Derecho Procesal,
   ➢ Instituto Iberoamericano de Derecho Procesal,
@@ -175,7 +175,7 @@ export const teamMembersHome = [
   ➢ Co-fundador y titular de la Asociación Argentina de Derecho Procesal.
   ➢ Tribunal de Arbitraje General y Mediación (UBA, UBATEC S.A. y Colegio de
   Escribanos de Capital Federal),
-  ➢ Comisión Consultora del SAIJ, Derecho Procesal (1989),
+  ➢ Comisión Consultora del SAIJ, Derecho Procesal,
   ➢ Instituto de Derechos del Consumidor de la Universidad Notarial Argentina,
   
   ➢ Miembro consultor Internacional de "Principios y Reglas de Procedimiento Civil Trasnacional"
@@ -183,11 +183,11 @@ export const teamMembersHome = [
   ➢ Director del Instituto de Derecho Procesal de la Academia Nacional de Derecho
   y Ciencias Sociales de Buenos Aires,
   ➢ Director General de Rubinzal online.`,
-      premios: `➢ Tesis Premio Facultad y Medalla de Oro (2002), Universidad de Buenos Aires
+      premios: `➢ Tesis Premio Facultad y Medalla de Oro, Universidad de Buenos Aires
   (UBA)
   ➢ Obtuvo el primer Premio Academia Nacional de Derecho y Ciencias Sociales
-  de Buenos Aires por el &quot;Tratado de la Prueba&quot; (2004),
-  ➢ KONEX Humanidades (2016), como una de las cinco personas más
+  de Buenos Aires por el &quot;Tratado de la Prueba&quot; ,
+  ➢ KONEX Humanidades, como una de las cinco personas más
   destacadas de la última década en &quot;Derecho Procesal, Internacional y de la
   Integración&quot;.`,
       obras: `Sus obras publicadas ocupan más de 60 volúmenes. Se destacan: Código
@@ -212,7 +212,7 @@ export const teamMembersHome = [
     name: 'Osvaldo A. Prato',
     details: {
       formacion: `
-      Facultad de derecho de la Universidad de Buenos Aires (1973)`,
+      Facultad de derecho de la Universidad de Buenos Aires `,
       miembro: `Colegio Público de Abogados de la Capital Federal.
   Bolsa de Comercio de Buenos Aires
   Coordinador General de FUNDESI (Fundación de estudios Superiores e
@@ -227,8 +227,8 @@ export const teamMembersHome = [
       especialidades: `Derecho del consumidor, Acciones de clase, Derecho Procesal, Derecho
   Bancario, Mercado de Capitales, Derecho de seguros, Mediación, Arbitraje y
   resolución alternativa de conflictos`,
-      profesor: `Universidad de Buenos Aires, Derecho procesal (1975-1996)
-  Universidad de Belgrano, Derecho procesal (1986-1997)
+      profesor: `Universidad de Buenos Aires, Derecho procesal 
+  Universidad de Belgrano, Derecho procesal 
   Universidad Católica de Santiago del Estero, Sede Buenos Aires, Profesor
   adjunto de Derecho Procesal.`,
       idiomas: 'Español e inglés.',
@@ -240,7 +240,7 @@ export const teamMembersHome = [
     name: 'Eduardo A. Merola',
     details: {
       formacion: `
-      Facultad de derecho de la Universidad de Buenos Aires (1972)`,
+      Facultad de derecho de la Universidad de Buenos Aires `,
       miembro: `Colegio Público de Abogados de la Capital Federal.
   Colegio de Abogados de la Provincia de Buenos Aires
   Se desempeñó como Subgerente de relaciones Industriales en Agua y Energía
@@ -256,7 +256,7 @@ export const teamMembersHome = [
     img: '/assets/img/experts/VALERIA_MUSSI.jpeg',
     name: 'María Valeria Mussi',
     details: {
-      formacion: `Facultad de Derecho de la Universidad de Buenos Aires (1997) Diploma de
+      formacion: `Facultad de Derecho de la Universidad de Buenos Aires  Diploma de
   Honor`,
       miembro: 'Colegio Público de Abogados de la Capital Federal.',
       especialidades: `Derecho del consumidor, Acciones de clase, Derecho Procesal, Derecho
@@ -269,7 +269,7 @@ export const teamMembersHome = [
     img: '/assets/img/experts/DANIEL_SPINA.jpeg',
     name: 'Daniel Marcelo Spina',
     details: {
-      formacion: `Facultad de Derecho de la Universidad de Buenos Aires (2011)`,
+      formacion: `Facultad de Derecho de la Universidad de Buenos Aires `,
       miembro: 'Colegio Público de Abogados de la Capital Federal.',      
       especialidades: `Derecho comercial, Derecho de Defensa del Consumidor, Acciones Colectivas,
   Fintech.`,
@@ -282,12 +282,12 @@ export const teamMembersHome = [
     name: 'Mariela Karin Prato',
     details: {
       formacion: `
-      ➢ Administración Hotelera – Universidad de Belgrano (1996)
+      ➢ Administración Hotelera – Universidad de Belgrano 
       ➢ Licenciada en Administración de Empresas – Univ. Argentina de la Empresa
       (2002)
-      ➢ Posgrado en Análisis Financiero – Universidad de Belgrano (2005)
-      ➢ Abogacía – Universidad de Morón (2011)
-      ➢ Posgrado en Derecho Procesal – FUNDESI (2015)`,
+      ➢ Posgrado en Análisis Financiero – Universidad de Belgrano 
+      ➢ Abogacía – Universidad de Morón 
+      ➢ Posgrado en Derecho Procesal – FUNDESI `,
       miembro: `
       ➢ Colegio Público de Abogados de la Capital Federal
       ➢ Colegio de Abogados de la Provincia de Buenos Aires
@@ -303,7 +303,7 @@ export const teamMembersHome = [
     name: 'Lucio Gonzalo Blasco',
     details: {
       formacion: `
-      Facultad de Derecho de la Universidad de Buenos Aires (2021) Diploma de
+      Facultad de Derecho de la Universidad de Buenos Aires  Diploma de
   Honor
   Universidad Torcuato Di Tella, Especialización en Derecho Penal (En curso)`,
       miembro: 'Colegio Público de Abogados de la Capital Federal.',

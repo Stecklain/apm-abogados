@@ -38,13 +38,9 @@ const NuestroEquipo: React.FC = () => {
           <div className='lg:w-[45%] px-[5%] lg:ps-[5%]'>
             <h2 className="font-bold text-4xl lg:text-5xl mb-5">Nuestro equipo</h2>
             <p className="text-md md:text-lg">
-              Contamos con un grupo de abogados con una{" "}
+              Contamos con un grupo de abogados que poseen una {" "}
               <strong>sólida formación</strong> y{" "}
               <strong>experiencia</strong> en distintas áreas del derecho.
-              Cada uno de nuestros profesionales aporta una{" "}
-              <strong>perspectiva única</strong>, combinando conocimiento{" "}
-              <strong>técnico</strong> con enfoque <strong>práctico</strong> y
-              orientado a <strong>resultados</strong>.
               Además forman parte del cuerpo docente de una reconocida {" "}
               fundación de estudios superiores de derecho (FUNDESI){" "}
               en la Ciudad de Buenos Aires.

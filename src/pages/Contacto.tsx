@@ -7,7 +7,7 @@ interface ContactoProps {
   isHomePage?: boolean;
 }
 
-const Contacto: React.FC<ContactoProps> = ({ isHomePage = false}) => {
+const Contacto: React.FC<ContactoProps> = ({ isHomePage = false }) => {
   const form = useRef<HTMLFormElement>(null);
   const [isSending, setIsSending] = useState(false);
 
@@ -71,30 +71,30 @@ const Contacto: React.FC<ContactoProps> = ({ isHomePage = false}) => {
     <div className="flex flex-col  items-center mx-auto  md:py-0">
       <ToastContainer />
       {!isHomePage &&
-      <section className="areasdepractica-banner">
-      <div className="flex flex-col-reverse gap-10  lg:flex-row items-center justify-between pb-10 lg:pb-0">
-        {/* Columna de Información */}
-        <div className='lg:w-[45%] px-[5%] lg:ps-[5%]'>
-          <h2 className="font-bold text-4xl lg:text-5xl mb-5">Hace tu consulta</h2>
-          <p className="text-md md:text-lg">
-            Nuestro equipo de abogados está aquí <strong>para ayudarte.</strong> {" "}
-            Completa el formulario o comunícate con nosotros  {" "}
-            directamente para recibir una <strong> consulta personalizada.</strong>{" "}
-            Estamos listos para atender tus <strong>necesidades legales</strong> de {" "}
-            manera eficiente y profesional.
-          </p>
-        </div>
+        <section className="areasdepractica-banner">
+          <div className="flex flex-col-reverse gap-10  lg:flex-row items-center justify-between pb-10 lg:pb-0">
+            {/* Columna de Información */}
+            <div className='lg:w-[45%] px-[5%] lg:ps-[5%]'>
+              <h2 className="font-bold text-4xl lg:text-5xl mb-5">Hace tu consulta</h2>
+              <p className="text-md md:text-lg">
+                Nuestro equipo de abogados está aquí <strong>para ayudarte.</strong> {" "}
+                Completa el formulario o comunícate con nosotros  {" "}
+                directamente para recibir una <strong> consulta personalizada.</strong>{" "}
+                Estamos listos para atender tus <strong>necesidades legales</strong> de {" "}
+                manera eficiente y profesional.
+              </p>
+            </div>
 
 
-        {/* Columna de Imagen */}
-        <div className='h-[40%] lg:w-[50%]'>
-          <img
-            src="/assets/img/contacto-banner-img.jpeg"
-            alt="Áreas de práctica"
-          />
-        </div>
-      </div>
-    </section>}
+            {/* Columna de Imagen */}
+            <div className='h-[40%] lg:w-[50%]'>
+              <img
+                src="/assets/img/contacto-banner-img.jpeg"
+                alt="Áreas de práctica"
+              />
+            </div>
+          </div>
+        </section>}
       <div id="contact-form" className="bg-customBlue text-white w-full py-12 px-6 md:px-40">
         <h2 className="flex items-center justify-center font-bold mb-12 text-4xl lg:text-5xl">Contacto</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -104,8 +104,10 @@ const Contacto: React.FC<ContactoProps> = ({ isHomePage = false}) => {
               ¿Estás necesitando asesoría legal?
             </h2>
             <p className="text-gray-300 mb-6 text-sm md:text-base text-center md:text-start">
-              En APM Abogados, nos especializamos en ofrecer soluciones jurídicas eficaces y a medida para cada uno de
-              nuestros clientes. Complete el formulario y uno de nuestros abogados se pondrá en contacto con usted a la brevedad.
+              En APM Abogados, nos especializamos en
+              ofrecer soluciones jurídicas para cada uno de nuestros consultantes.
+              Complete el formulario y uno de nuestros abogados se pondrá en contacto
+              con usted a la brevedad.
             </p>
 
             {/* Formulario */}
@@ -136,7 +138,7 @@ const Contacto: React.FC<ContactoProps> = ({ isHomePage = false}) => {
                 className="w-full md:w-fit bg-white text-primary px-10 py-2 md:px-20 md:py-4  md:mt-8 shadow hover:bg-gray-300 transition"
                 disabled={isSending}
               >
-                {isSending ? 'Enviando...' : 'Enviar'}  
+                {isSending ? 'Enviando...' : 'Enviar'}
               </button>
             </form>
           </div>

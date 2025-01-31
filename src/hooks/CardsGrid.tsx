@@ -23,14 +23,14 @@ const cardsData = [
     alt: "Mercado de Capitales",
     title: "Mercado de Capitales",
     description:
-      "Es una rama del derecho financiero que regula las actividades relacionadas con la emisión, oferta, negociación y control de valores negociables en el mercado. Su finalidad principal es garantizar la transparencia, integridad y eficiencia en las operaciones, protegiendo a los inversores y fomentando el desarrollo del sistema financiero.",
+      "En Argentina está creciendo la obtención de capitales productivos que necesitan las empresas, no recurriendo éstas a los “clásicos” créditos bancarios. Para ello se instrumentan diversas figuras jurídicas (Fondos Comunes de Inversión -FCI-, fideicomisos, Obligaciones Negociables, pagarés bursátiles, etc.). Tales instrumentos a través de agentes de bolsa, captan ahorros de personas comunes que no son inversores calificados (Resolución General n° 761/2018 de la Comisión Nacional de Valores) los cuales cobran una renta periódica a través del tiempo, que varía según el grado de éxito del producto que han elegido. Quienes vigilan el comportamiento de ese mercado son asociaciones civiles de defensa del consumidor especializadas en esa materia y cuando advierten (posibles) ilegalidades, recurren a nuestro estudio para que las represente y desenvuelva las negociaciones resarcitorias del caso, o inicie el correspondiente reclamo judicial a través de una acción de clase.",
   },
   {
     img: "/assets/img/AREA_DERECHO_COMERCIAL.jpg",
     alt: "Derecho comercial",
     title: "Derecho comercial",
     description:
-      "Se encarga de regular las relaciones entre comerciantes, buscando proporcionar un marco normativo que fomente la seguridad jurídica y la confianza en el ámbito de los negocios.",
+      "Patrocinamos a reclamantes que tengan conflictos en materia societaria, fideicomisos, cooperativismo, infracapitalización de sociedades comerciales, seguros, bancos, retails, etc.",
   },
   {
     img: "/assets/img/AREA_DERECHO_BANCARIO.jpg",
@@ -51,21 +51,21 @@ const cardsData = [
     alt: "Derecho civil",
     title: "Derecho civil",
     description:
-      "Es una rama del derecho privado que regula las relaciones entre las personas físicas o jurídicas, en aspectos esenciales de la vida cotidiana.  Su finalidad principal es garantizar la convivencia armónica y proteger los derechos fundamentales, como la propiedad, la familia y la responsabilidad por daños.",
+      "Sustanciamos conflictos de familia, sucesiones, conjuntos inmobiliarios, propiedad horizontal, condominios, derechos reales, gestión de negocios, etc.",
   },
   {
     img: "/assets/img/AREA_DERECHO_LABORAL.jpg",
     alt: "Derecho laboral",
     title: "Derecho laboral",
     description:
-      "Regula las relaciones laborales entre empleados y empleadores, procurando que los derechos y obligaciones de ambas partes se encuentren garantizados.",
+      "Tomamos reclamos derivados de una relación de trabajo, como actores o defensores de quien sea objeto de un juicio laboral, en cualquiera de sus variantes (accidentes de trabajo, incapacidades sobrevinientes, etc.)",
   },
   {
     img: "/assets/img/AREA_DERECHO_ADMINISTRATIVO.jpeg",
     alt: "Derecho administrativo",
     title: "Derecho administrativo",
     description:
-      "Es la rama del derecho público que regula la actividad del Estado en su función administrativa, las relaciones entre la Administración Pública y los particulares, y los mecanismos de control sobre los actos del poder público. Su propósito principal es garantizar que las actuaciones de los órganos administrativos sean legales, transparentes y respeten los derechos de los ciudadanos."
+      "Es la rama del derecho público que regula la actividad del Estado en su función administrativa, las relaciones entre la Administración Pública y los particulares, y los mecanismos de control sobre los actos del poder público. Su propósito principal es garantizar que las actuaciones de los órganos administrativos sean genuinas, transparentes y respeten los derechos de los ciudadanos"
   },
 ];
 
