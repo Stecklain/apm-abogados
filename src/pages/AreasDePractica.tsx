@@ -35,11 +35,9 @@ const AreasDePractica: React.FC = () => {
 
     <section className="bg-gray-400 p-12">
       <div className="mx-auto  text-end flex flex-col items-end">
-        <h2 className="font-bold text-3xl text-white mb-4">¿Tienes un desafío legal?</h2>
-        <p className="text-primary text-md mb-6 leading-relaxed max-w-4xl">
-          Nuestro equipo de abogados está listo para ofrecerte el asesoramiento y la representación que necesitas.
-          Contáctanos hoy y descubre cómo podemos ayudarte a alcanzar los mejores resultados.
-        </p>
+        <h2 className="font-bold text-3xl text-white mb-4">¿Quiere hacer una
+        consulta?</h2>
+        
         <Link
           to="/contacto" className="bg-customBlue text-white font-semibold py-3 px-8 shadow-md hover:bg-white hover:text-primary transition duration-500">
           Hacer una consulta
