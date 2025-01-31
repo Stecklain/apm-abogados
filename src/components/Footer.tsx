@@ -25,10 +25,10 @@ const Footer: React.FC = () => {
             <div className="flex items-center">
               ✉{" "}
               <a
-                href="mailto:info@apmabogados.com.ar"
+                href="mailto:recepción@apmabogados.com.ar"
                 className="ml-2 underline hover:text-gray-300"
               >
-                info@apmabogados.com.ar
+                recepción@apmabogados.com.ar
               </a>
             </div>
           </div>

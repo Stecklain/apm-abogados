@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import CountUp from "react-countup";
-import { teamMembers } from "../utils/membersInfo"
+import { teamMembersHome } from "../utils/membersInfo"
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import Contacto from "./Contacto";
@@ -276,7 +276,7 @@ const Home: React.FC = () => {
                   centeredSlides={true}
                   loop={true}
                 >
-                  {teamMembers.map((member, index) => (
+                  {teamMembersHome.map((member, index) => (
                     <SwiperSlide key={index}>
                       <div className="flex flex-col justify-center items-center">
                         <div className="relative group w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] rounded-full overflow-hidden shadow-lg">

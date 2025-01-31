@@ -4,6 +4,7 @@ import AreasDePractica from './pages/AreasDePractica';
 import ElEstudio from './pages/ElEstudio';
 import Contacto from './pages/Contacto';
 import NuestroEquipo from './pages/NuestroEquipo';
+import ConstructionPage from './pages/ConstructionPage';
 import Layout from './pages/Layout.tsx';
 
 export const router = createBrowserRouter([
@@ -11,7 +12,8 @@ export const router = createBrowserRouter([
     path: '/',
     element: <Layout />,
     children: [
-      { path: '/', element: <Home /> },
+      { path: '/', element: <ConstructionPage /> },
+      { path: '/home', element: <Home /> },
       { path: '/areas-de-practica', element: <AreasDePractica /> },
       { path: '/el-estudio', element: <ElEstudio /> },
       { path: '/nuestro-equipo', element: <NuestroEquipo /> },

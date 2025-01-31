@@ -39,12 +39,15 @@ const NuestroEquipo: React.FC = () => {
             <h2 className="font-bold text-4xl lg:text-5xl mb-5">Nuestro equipo</h2>
             <p className="text-md md:text-lg">
               Contamos con un grupo de abogados con una{" "}
-              <strong>solida formacion</strong> y{" "}
-              <strong>vasta experiencia</strong> en distintas areas del derecho.
+              <strong>sólida formación</strong> y{" "}
+              <strong>experiencia</strong> en distintas áreas del derecho.
               Cada uno de nuestros profesionales aporta una{" "}
-              <strong>perspectiva unica</strong>, combinando conocimiento{" "}
-              <strong>tecnico</strong> con enfoque <strong>practico</strong> y
+              <strong>perspectiva única</strong>, combinando conocimiento{" "}
+              <strong>técnico</strong> con enfoque <strong>práctico</strong> y
               orientado a <strong>resultados</strong>.
+              Además forman parte del cuerpo docente de una reconocida {" "}
+              fundación de estudios superiores de derecho (FUNDESI){" "}
+              en la Ciudad de Buenos Aires.
             </p>
           </div>
 
@@ -61,7 +64,7 @@ const NuestroEquipo: React.FC = () => {
 
       <section className="py-16 bg-gray-100">
         <div className="container mx-auto">
-          <div className="flex flex-wrap justify-center gap-16">
+          <div className="flex flex-wrap-reverse justify-center gap-16">
             {teamMembers.map((member, index) => (
               <div
                 key={index}
@@ -76,6 +79,7 @@ const NuestroEquipo: React.FC = () => {
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">
                   {member.name}
                 </h3>
+                {member.role && (<p className="text-md text-gray-600">{member.role}</p>)}
                 {!member.showCurriculum && (<a
                   target="_blank"
                   rel="noopener noreferrer"
@@ -111,7 +115,7 @@ const NuestroEquipo: React.FC = () => {
           aria-describedby="modal-modal-description"
         >
           <Box sx={style}>
-            <div className="flex flex-col w-[800px]">
+            <div className="flex flex-col max-w-[800px]">
               <div className="flex flex-row items-center">
                 {/* Imagen */}
                 <img
@@ -131,43 +135,63 @@ const NuestroEquipo: React.FC = () => {
                 <div className="text-left text-lg text-gray-800 mt-4">
                   {selectedMember.details.formacion && <p className="mt-4">
                     <strong>Formación:</strong>
-                    <p>{selectedMember.details.formacion}</p>
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: selectedMember.details.formacion.replace(
+                          /\n/g,
+                          "<br />"
+                        ),
+                      }}
+                    ></span>
                   </p>}
                   {selectedMember.details.miembro &&
                     <p className="mt-4">
-                      <strong>Miembro:<br /></strong>-
+                      <strong>Miembro:<br /></strong>
                       <span
                         dangerouslySetInnerHTML={{
                           __html: selectedMember.details.miembro.replace(
-                            /, /g,
-                            "<br />-"
+                            /\n/g,
+                            "<br />"
                           ),
                         }}
                       ></span>
                     </p>}
-                  {selectedMember.details.premios && (
+                  {selectedMember.details.premios &&
                     <p className="mt-4">
-                      <strong>Premios:<br /></strong>-
+                      <strong>Premios:<br /></strong>
                       <span
                         dangerouslySetInnerHTML={{
                           __html: selectedMember.details.premios.replace(
-                            /, /g,
-                            "<br />-"
+                            /\n/g,
+                            "<br />"
                           ),
                         }}
                       ></span>
-                    </p>
-                  )}
+                    </p>}
                   {selectedMember.details.profesor &&
                     <p className="mt-4">
                       <strong>Profesor:</strong>
-                      <p>{selectedMember.details.profesor}</p>
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: selectedMember.details.profesor.replace(
+                            /\n/g,
+                            "<br />"
+                          ),
+                        }}
+                      ></span>
                     </p>
                   }
                   {selectedMember.details.especialidades &&
                     <p className="mt-4">
                       <strong>Especialidades:</strong>
-                      <p>{selectedMember.details.especialidades}</p>
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: selectedMember.details.especialidades.replace(
+                            /\n/g,
+                            "<br />"
+                          ),
+                        }}
+                      ></span>
                     </p>}
                   {selectedMember.details.idiomas &&
                     <p className="mt-4">

@@ -27,7 +27,6 @@ root.render(
         <LocalizationProvider dateAdapter={AdapterDayjs} adapterLocale="es">
           <QueryClientProvider client={queryClient}>
             <SnackbarProvider>
-              {/* AQUI RouterProvider envuelve todo */}
               <RouterProvider router={router} />
             </SnackbarProvider>
           </QueryClientProvider>
