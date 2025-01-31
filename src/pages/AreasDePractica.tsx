@@ -11,12 +11,10 @@ const AreasDePractica: React.FC = () => {
         <div className='lg:w-[45%] px-[5%] lg:ps-[5%]'>
           <h2 className="font-bold text-4xl lg:text-5xl mb-5">Áreas de práctica</h2>
           <p className="text-md md:text-2xl">
-            En nuestro estudio, brindamos asesoramiento <strong>integral</strong> en diversas áreas del derecho, con un enfoque especializado en las{" "}
-            <strong>necesidades empresariales y particulares</strong>.
+          En nuestro estudio, brindamos asesoramiento integral en diversas áreas del
+          derecho para en su caso, deducir las correspondientes acciones judiciales.
           </p>
-          <p className="text-md md:text-2xl">
-            Nos dedicamos a ofrecer <strong>soluciones legales</strong> en las áreas del derecho en las que el estudio se especializa.
-          </p>
+         
         </div>
 
 
