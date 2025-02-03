@@ -41,7 +41,7 @@ const NuestroEquipo: React.FC = () => {
               Contamos con un grupo de abogados que poseen una {" "}
               <strong>sólida formación</strong> y{" "}
               <strong>experiencia</strong> en distintas áreas del derecho.
-              Además forman parte del cuerpo docente de una reconocida {" "}
+              Además, forman parte del cuerpo docente de una reconocida {" "}
               fundación de estudios superiores de derecho (FUNDESI){" "}
               en la Ciudad de Buenos Aires.
             </p>
@@ -60,8 +60,41 @@ const NuestroEquipo: React.FC = () => {
 
       <section className="py-16 bg-gray-100">
         <div className="container mx-auto">
-          <div className="flex flex-wrap-reverse justify-center gap-16">
-            {teamMembers.map((member, index) => (
+          {/* Primer miembro destacado */}
+          <div className="flex justify-center mb-16">
+            <div 
+              className="group flex flex-col items-center text-center transition-transform transform hover:scale-101 cursor-pointer"
+              onClick={() => handleSelectMember(teamMembers[0])}
+            >
+              <img
+                src={teamMembers[0].img}
+                alt={teamMembers[0].name}
+                className="w-[400px] h-[400px] object-cover rounded-full mb-10 transition-transform group-hover:scale-110"
+              />
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                {teamMembers[0].name}
+              </h3>
+              {teamMembers[0].role && (
+                <p className="text-lg text-gray-600 font-bold">{teamMembers[0].role}</p>
+              )}
+              {teamMembers[0].subtitle && (
+                <p className="text-lg text-gray-600 whitespace-pre-line">{teamMembers[0].subtitle}</p>
+              )}
+              {!teamMembers[0].showCurriculum && (
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary underline text-sm hover:text-blue-950"
+                >
+                  Ver Curriculum Vitae
+                </a>
+              )}
+            </div>
+          </div>
+
+          {/* Resto de los miembros */}
+          <div className="flex flex-wrap justify-center gap-16">
+            {teamMembers.slice(1).map((member, index) => (
               <div
                 key={index}
                 className="group flex flex-col items-center text-center transition-transform transform hover:scale-101 cursor-pointer"
@@ -70,12 +103,15 @@ const NuestroEquipo: React.FC = () => {
                 <img
                   src={member.img}
                   alt={member.name}
-                  className="w-[320px] h-[320px] object-cover rounded-full  mb-10 transition-transform group-hover:scale-110"
+                  className="w-[320px] h-[320px] object-cover rounded-full mb-10 transition-transform group-hover:scale-110"
                 />
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">
                   {member.name}
                 </h3>
-                {member.role && (<p className="text-md text-gray-600">{member.role}</p>)}
+                {member.role && (<p className="text-md text-gray-600 font-bold">{member.role}</p>)}
+                {member.subtitle && (
+                  <p className="text-md text-gray-600 whitespace-pre-line">{member.subtitle}</p>
+                )}
                 {!member.showCurriculum && (<a
                   target="_blank"
                   rel="noopener noreferrer"

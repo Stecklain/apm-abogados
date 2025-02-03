@@ -1,63 +1,12 @@
 export const teamMembers = [
   {
-    img: '/assets/img/experts/DANIEL_SPINA.jpeg',
-    name: 'Daniel Marcelo Spina',
-    details: {
-      formacion: `
-      Facultad de Derecho de la Universidad de Buenos Aires `,
-      miembro: 'Colegio Público de Abogados de la Capital Federal.',      
-      especialidades: `
-      Derecho comercial, Derecho de Defensa del Consumidor, Acciones Colectivas, Fintech.`,
-      idiomas: 'Español e inglés',
-      email: 'dspina@apmabogados.com.ar',
-    },
-  }, //Daniel
-  {
-    img: '/assets/img/experts/MARIELA_PRATO.jpeg',
-    name: 'Mariela Karin Prato',
-    details: {
-      formacion: `
-      ➢ Licenciada en Administración Hotelera – Universidad de Belgrano 
-      ➢ Licenciada en Administración de Empresas – Univ. Argentina de la Empresa
-      
-      ➢ Posgrado en Análisis Financiero – Universidad de Belgrano 
-      ➢ Abogacía – Universidad de Morón 
-      ➢ Posgrado en Derecho Procesal – FUNDESI `,
-      miembro: `
-      ➢ Colegio Público de Abogados de la Capital Federal
-      ➢ Colegio de Abogados de la Provincia de Buenos Aires
-      ➢ Bolsa de Comercio de Buenos Aires`,
-      especialidades: `
-      Derecho del consumidor, Acciones de clase, Derecho Procesal, Derecho Bancario, Mercado de Capitales`,
-      idiomas: 'Español e inglés',
-      email: 'mprato@apmabogados.com.ar',
-    },
-  }, //Mariela
-  {
-    img: '/assets/img/experts/LUCIO_BLASCO.jpeg',
-    name: 'Lucio Gonzalo Blasco',
-    details: {
-      formacion: `
-      ➢ Facultad de Derecho de la Universidad de Buenos Aires  Diploma de Honor.
-      ➢ Universidad Torcuato Di Tella, Especialización en Derecho Penal `,
-      miembro: 'Colegio Público de Abogados de la Capital Federal.',
-      profesor: `
-      ➢ Docente en &quot;Elementos del Derecho Procesal Civil y Comercial&quot;
-      (Facultad de Derecho de la UBA)`,
-      especialidades: `
-      Derecho del Consumidor; Acciones de Clase; Derecho Procesal.`,
-      idiomas: 'Español, Inglés',
-      email: 'lblasco@apmabogados.com.ar',
-    },
-  }, //Lucio
-  {
-    img: '/assets/img/experts/NANCY_PAZ.jpeg',
-    name: 'Nancy Marcela Paz',
+    img: '/assets/img/experts/MASCOTA_ESTUDIO.jpeg',
+    name: 'Foja',
+    role: 'Mascota del Estudio',
+    subtitle: `Convive con los integrantes del estudio varios
+    momentos del día, un poco con cada uno.`,
     showCurriculum: 'No',
-    details: {
-      email: 'npaz@apmabogados.com.ar',
-    },
-  }, //Nancy
+  }, //Mascota
   {
     img: '/assets/img/experts/ENRIQUE_FALCON.jpeg',
     name: 'Enrique Manuel Falcón',
@@ -152,11 +101,65 @@ Contenciosos y luego como Gerente General.`,
     },
   }, //Valeria
   {
-    img: '/assets/img/experts/MASCOTA_ESTUDIO.jpeg',
-    name: 'Foja',
-    role: 'Mascota del Estudio',
+    img: '/assets/img/experts/DANIEL_SPINA.jpeg',
+    name: 'Daniel Marcelo Spina',
+    details: {
+
+      formacion: `
+      Facultad de Derecho de la Universidad de Buenos Aires `,
+      miembro: 'Colegio Público de Abogados de la Capital Federal.',      
+      especialidades: `
+      Derecho comercial, Derecho de Defensa del Consumidor, Acciones Colectivas, Fintech.`,
+      idiomas: 'Español e inglés',
+      email: 'dspina@apmabogados.com.ar',
+    },
+  }, //Daniel
+  {
+    img: '/assets/img/experts/MARIELA_PRATO.jpeg',
+    name: 'Mariela Karin Prato',
+    details: {
+      formacion: `
+      ➢ Licenciada en Administración Hotelera – Universidad de Belgrano 
+      ➢ Licenciada en Administración de Empresas – Univ. Argentina de la Empresa
+      
+      ➢ Posgrado en Análisis Financiero – Universidad de Belgrano 
+      ➢ Abogacía – Universidad de Morón 
+      ➢ Posgrado en Derecho Procesal – FUNDESI `,
+      miembro: `
+      ➢ Colegio Público de Abogados de la Capital Federal
+      ➢ Colegio de Abogados de la Provincia de Buenos Aires
+      ➢ Bolsa de Comercio de Buenos Aires`,
+      especialidades: `
+      Derecho del consumidor, Acciones de clase, Derecho Procesal, Derecho Bancario, Mercado de Capitales`,
+      idiomas: 'Español e inglés',
+      email: 'mprato@apmabogados.com.ar',
+    },
+  }, //Mariela
+  {
+    img: '/assets/img/experts/LUCIO_BLASCO.jpeg',
+    name: 'Lucio Gonzalo Blasco',
+    details: {
+      formacion: `
+      ➢ Facultad de Derecho de la Universidad de Buenos Aires  Diploma de Honor.
+      ➢ Universidad Torcuato Di Tella, Especialización en Derecho Penal `,
+      miembro: 'Colegio Público de Abogados de la Capital Federal.',
+      profesor: `
+      ➢ Docente en &quot;Elementos del Derecho Procesal Civil y Comercial&quot;
+      (Facultad de Derecho de la UBA)`,
+      especialidades: `
+      Derecho del Consumidor; Acciones de Clase; Derecho Procesal.`,
+      idiomas: 'Español, Inglés',
+      email: 'lblasco@apmabogados.com.ar',
+    },
+  }, //Lucio
+  {
+    img: '/assets/img/experts/NANCY_PAZ.jpeg',
+    name: 'Nancy Marcela Paz',
     showCurriculum: 'No',
-  } //Mascota
+    details: {
+      email: 'npaz@apmabogados.com.ar',
+    },
+  }, //Nancy
 ];
 
 export const teamMembersHome = [  
@@ -324,7 +327,8 @@ export const teamMembersHome = [
   {
     img: '/assets/img/experts/MASCOTA_ESTUDIO.jpeg',
     name: 'Foja',
-    role: 'Mascota del Estudio, Convive con los integrantes del estudio varios momentos del día, un poco con cada uno.',
+    role: 'Mascota del Estudio',
+    subtitle: 'Convive con los integrantes del estudio varios momentos del día, un poco con cada uno.',
     showCurriculum: 'No',
   }, //Mascota
 ];
