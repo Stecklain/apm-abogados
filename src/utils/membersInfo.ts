@@ -3,8 +3,8 @@ export const teamMembers = [
     img: '/assets/img/experts/MASCOTA_ESTUDIO.jpeg',
     name: 'Foja',
     role: 'Mascota del Estudio',
-    subtitle: `Convive con los integrantes del estudio varios
-    momentos del día, un poco con cada uno.`,
+    subtitle: `Convive con los integrantes del estudio 
+    varios momentos del día, un poco con cada uno.`,
     showCurriculum: 'No',
   }, //Mascota
   {

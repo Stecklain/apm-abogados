@@ -65,20 +65,21 @@ const NuestroEquipo: React.FC = () => {
             <div 
               className="group flex flex-col items-center text-center transition-transform transform hover:scale-101 cursor-pointer"
               onClick={() => handleSelectMember(teamMembers[0])}
+              style={{ width: '320px' }}
             >
               <img
                 src={teamMembers[0].img}
                 alt={teamMembers[0].name}
-                className="w-[400px] h-[400px] object-cover rounded-full mb-10 transition-transform group-hover:scale-110"
+                className="w-[320px] h-[320px] object-cover rounded-full mb-10 transition-transform group-hover:scale-110"
               />
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">
                 {teamMembers[0].name}
               </h3>
               {teamMembers[0].role && (
-                <p className="text-lg text-gray-600 font-bold">{teamMembers[0].role}</p>
+                <p className="text-md text-gray-600 font-bold">{teamMembers[0].role}</p>
               )}
               {teamMembers[0].subtitle && (
-                <p className="text-lg text-gray-600 whitespace-pre-line">{teamMembers[0].subtitle}</p>
+                <p className="text-md text-gray-600 whitespace-pre-line">{teamMembers[0].subtitle}</p>
               )}
               {!teamMembers[0].showCurriculum && (
                 <a
