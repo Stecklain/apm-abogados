@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { truncateText } from '../utils/string-utils';
 
@@ -90,9 +89,9 @@ const CardsGrid = () => {
                 <h3 className="title-cards-areasdepractica font-bold text-start text-white mb-2 px-4">
                   {card.title}
                 </h3>
-                <p className="p-cards-areasdepractica text-start text-white leading-relaxed px-4">
-                  {truncateText(card.description, 500)}
-                </p>
+                <div className="p-cards-areasdepractica text-start text-white leading-relaxed px-4 h-64 overflow-y-auto">
+                  {card.description}
+                </div>
               </div>
 
               {/* Botón "Quiero asesorarme" */}
