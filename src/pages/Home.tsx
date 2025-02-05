@@ -156,7 +156,7 @@ const Home: React.FC = () => {
                       {truncateText('Se encarga de regular las relaciones entre los usuarios y consumidores con los proveedores. Su principal objetivo es proteger los derechos de los consumidores, garantizar la transparencia en las transacciones comerciales y promover el equilibrio en las relaciones de consumo.', 180)}
                     </p>
                     {/* Flecha que aparece en hover */}
-                    <button className="absolute top-40 right-1/2 transform translate-x-1/2 opacity-0 lg:group-hover:opacity-100 text-primary border border-customBlue px-2 py-1 rounded-full shadow transition-all duration-300 mt-6 sm:mt-6">
+                    <button className="absolute top-48 right-1/2 transform translate-x-1/2 opacity-0 lg:group-hover:opacity-100 text-primary border border-customBlue px-2 py-1 rounded-full shadow transition-all duration-300 mt-6 sm:mt-6">
                       ➔
                     </button>
                   </div>
@@ -175,9 +175,9 @@ const Home: React.FC = () => {
                   <div className="p-4 relative">
                     <h4 className="text-xl md:text-2xl font-bold text-gray-800 mb-2">Derecho comercial</h4>
                     <p className="text-gray-600 text-sm md:text-[16px] leading-relaxed px-2">
-                      {truncateText('Se encarga de regular las relaciones entre comerciantes, buscando proporcionar un marco normativo que fomente la seguridad jurídica y la confianza en el ámbito de los negocios.', 180)}
+                      {truncateText('Patrocinamos a reclamantes que tengan conflictos en materia societaria, fideicomisos, cooperativismo, infracapitalización de sociedades comerciales, seguros, bancos, retails, etc.', 180)}
                     </p>
-                    <button className="absolute top-40 right-1/2 transform translate-x-1/2 opacity-0 lg:group-hover:opacity-100 text-primary border border-customBlue px-2 py-1 rounded-full shadow transition-all duration-300 mt-6 sm:mt-6">
+                    <button className="absolute top-48 right-1/2 transform translate-x-1/2 opacity-0 lg:group-hover:opacity-100 text-primary border border-customBlue px-2 py-1 rounded-full shadow transition-all duration-300 mt-6 sm:mt-6">
                       ➔
                     </button>
                   </div>
@@ -197,9 +197,9 @@ const Home: React.FC = () => {
                   <div className="p-4 relative">
                     <h4 className="text-xl md:text-2xl font-bold text-gray-800 mb-2">Derecho civil</h4>
                     <p className="text-gray-600 text-sm md:text-[16px] leading-relaxed px-2">
-                      {truncateText('Es una rama del derecho privado que regula las relaciones entre las personas físicas o jurídicas, en aspectos esenciales de la vida cotidiana.  Su finalidad principal es garantizar la convivencia armónica y proteger los derechos fundamentales, como la propiedad, la familia y la responsabilidad por daños.', 180)}
+                      {truncateText('Sustanciamos conflictos de familia, sucesiones, conjuntos inmobiliarios, propiedad horizontal, condominios, derechos reales, gestión de negocios, etc.', 180)}
                     </p>
-                    <button className="absolute top-40 right-1/2 transform translate-x-1/2 opacity-0 lg:group-hover:opacity-100 text-primary border border-customBlue px-2 py-1 rounded-full shadow transition-all duration-300 mt-6 sm:mt-6">
+                    <button className="absolute top-48 right-1/2 transform translate-x-1/2 opacity-0 lg:group-hover:opacity-100 text-primary border border-customBlue px-2 py-1 rounded-full shadow transition-all duration-300 mt-6 sm:mt-6">
                       ➔
                     </button>
                   </div>
@@ -217,10 +217,10 @@ const Home: React.FC = () => {
                   />
                   <div className="p-4 relative">
                     <h4 className="text-xl md:text-2xl font-bold text-gray-800 mb-2">Derecho laboral</h4>
-                    <p className="text-gray-600 text-sm md:text-[16px] leading-relaxed px-2 ">
-                      {truncateText('Regula las relaciones laborales entre empleados y empleadores, procurando que los derechos y obligaciones de ambas partes se encuentren garantizados.', 180)}
+                    <p className="text-gray-600 text-sm md:text-[16px]  leading-relaxed px-2 ">
+                      {truncateText('Tomamos reclamos derivados de una relación de trabajo, como actores o defensores de quien sea objeto de un juicio laboral, en cualquiera de sus variantes (accidentes de trabajo, incapacidades sobrevinientes, etc.)', 180)}
                     </p>
-                    <button className="absolute top-40 right-1/2 transform translate-x-1/2 opacity-0 lg:group-hover:opacity-100 text-primary border border-customBlue px-2 py-1 rounded-full shadow transition-all duration-300 mt-6 sm:mt-6">
+                    <button className="absolute top-48 right-1/2 transform translate-x-1/2 opacity-0 lg:group-hover:opacity-100 text-primary border border-customBlue px-2 py-1 rounded-full shadow transition-all duration-300 mt-6 sm:mt-6">
                       ➔
                     </button>
                   </div>
