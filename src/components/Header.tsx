@@ -10,7 +10,7 @@ const Header: React.FC = () => {
         {/* Logo */}
         <div className="logo flex items-center">
           {/* Logo Desktop */}
-          <Link to="/home" className="hidden lg:block w-[431px] h-[52px]">
+          <Link to="/" className="hidden lg:block w-[431px] h-[52px]">
             <img
               src="/assets/img/APM-abogados-logo.svg"
               alt="APM Abogados Logo"
@@ -18,7 +18,7 @@ const Header: React.FC = () => {
             />
           </Link>
           {/* Logo Mobile */}
-          <Link to="/home" className="lg:hidden w-[219px] h-[71px]">
+          <Link to="/" className="lg:hidden w-[219px] h-[71px]">
             <img
               src="/assets/img/APM-abogados-logo-mobile.svg"
               alt="APM Abogados Logo Mobile"
@@ -34,7 +34,7 @@ const Header: React.FC = () => {
             isMenuOpen ? 'h-auto opacity-100 py-8' : 'h-0 opacity-0 overflow-hidden'
           } lg:static lg:h-auto lg:opacity-100 lg:overflow-visible lg:flex lg:flex-row lg:py-0 lg:space-x-14 lg:justify-center lg:items-center lg:space-y-0`}
         >
-          <Link to="/home" className="custom-link transition font-normal py-2 px-4 lg:py-0 lg:px-0">
+          <Link to="/" className="custom-link transition font-normal py-2 px-4 lg:py-0 lg:px-0">
             Inicio
           </Link>
           <Link to="/areas-de-practica" className="custom-link transition font-normal py-2 px-4 lg:py-0 lg:px-0">
