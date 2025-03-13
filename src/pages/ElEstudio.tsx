@@ -45,7 +45,8 @@ const ElEstudio: React.FC = () => {
           resarcimiento, sea por sentencia o acuerdos transaccionales.
           Dicho mecanismo de reclamo (acciones de clase o colectivas) es la
           especialidad de nuestro estudio, tratándose de un sistema judicial que ya
-          tiene una larga historia en EE.UU., Alemania, Bélgica, Brasil.
+          tiene una larga historia en EE.UU., Alemania, Bélgica, Brasil, Chile, España, Francia, Grecia, Holanda, Italia y
+          otros países.
         </p>
       </section>
 
